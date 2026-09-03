@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>{% block title %}{{ title or "Apna School Ka Naam - Preschool" }}{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{% block title %}{{ title or "Apna School - Preschool" }}{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Nunito+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -88,14 +92,14 @@
                         "body-md": ["Nunito Sans"]
                     },
                     "fontSize": {
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
-                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "800"}],
-                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "700"}],
-                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "800"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "800" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
                     }
                 }
             }
@@ -104,6 +108,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
     {% block extra_head %}{% endblock %}
 </head>
+
 <body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased">
     <!-- Header / Navigation Bar -->
     {% block header %}
@@ -120,55 +125,68 @@
 
                 <!-- Desktop Navigation Links -->
                 <div class="hidden lg:flex items-center gap-6">
-                    <a href="{{ url_for('index') }}" class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'index' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Home</a>
+                    <a href="{{ url_for('index') }}"
+                        class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'index' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Home</a>
 
                     <!-- Programs Dropdown -->
                     <div class="dropdown-group py-2">
-                        <a href="{{ url_for('programs') }}" class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md flex items-center gap-1 {% if active_page in ['programs', 'senior_kg'] %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">
+                        <a href="{{ url_for('programs') }}"
+                            class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md flex items-center gap-1 {% if active_page in ['programs', 'senior_kg'] %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">
                             Programs
                             <span class="material-symbols-outlined dropdown-arrow text-lg">expand_more</span>
                         </a>
 
                         <!-- Dropdown Panel -->
                         <div class="dropdown-menu absolute top-full left-0 pt-2 z-50 w-72">
-                            <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl shadow-xl p-3 flex flex-col gap-1 backdrop-blur-md">
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                            <div
+                                class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl shadow-xl p-3 flex flex-col gap-1 backdrop-blur-md">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">child_care</span>
                                     <span class="font-bold text-sm">Toddlers Club</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">toys</span>
                                     <span class="font-bold text-sm">Playgroup</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">nature_people</span>
                                     <span class="font-bold text-sm">Nursery</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">palette</span>
                                     <span class="font-bold text-sm">Junior KG</span>
                                 </a>
-                                <a href="{{ url_for('senior_kg') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('senior_kg') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">auto_stories</span>
                                     <span class="font-bold text-sm">Senior KG</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">family_restroom</span>
                                     <span class="font-bold text-sm">Daycare</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">sports_soccer</span>
                                     <span class="font-bold text-sm">Activity Club</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">spellcheck</span>
                                     <span class="font-bold text-sm">Phonics Matrix</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">rocket_launch</span>
                                     <span class="font-bold text-sm">STEAM Program</span>
                                 </a>
-                                <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('programs') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">emoji_events</span>
                                     <span class="font-bold text-sm">Olympiad</span>
                                 </a>
@@ -176,34 +194,45 @@
                         </div>
                     </div>
 
-                    <a href="{{ url_for('admissions') }}" class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'admissions' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Admissions</a>
-                    <a href="{{ url_for('franchise') }}" class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'franchise' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Franchise</a>
-                    <a href="{{ url_for('branches') }}" class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'branches' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Branches</a>
-                    <a href="{{ url_for('about') }}" class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'about' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">About Us</a>
+                    <a href="{{ url_for('admissions') }}"
+                        class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'admissions' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Admissions</a>
+                    <a href="{{ url_for('franchise') }}"
+                        class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'franchise' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Franchise</a>
+                    <a href="{{ url_for('branches') }}"
+                        class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'branches' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">Branches</a>
+                    <a href="{{ url_for('about') }}"
+                        class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md {% if active_page == 'about' %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">About
+                        Us</a>
 
                     <!-- More Dropdown -->
                     <div class="dropdown-group py-2">
-                        <button class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md flex items-center gap-1 {% if active_page in ['media', 'stories', 'careers', 'contact'] %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">
+                        <button
+                            class="font-bold text-sm uppercase tracking-wider transition-colors px-2 py-1 rounded-md flex items-center gap-1 {% if active_page in ['media', 'stories', 'careers', 'contact'] %}text-primary border-b-2 border-primary{% else %}text-on-surface-variant hover:text-primary{% endif %}">
                             More
                             <span class="material-symbols-outlined dropdown-arrow text-lg">expand_more</span>
                         </button>
 
                         <!-- Dropdown Panel -->
                         <div class="dropdown-menu absolute top-full right-0 pt-2 z-50 w-60">
-                            <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl shadow-xl p-3 flex flex-col gap-1 backdrop-blur-md">
-                                <a href="{{ url_for('media') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                            <div
+                                class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl shadow-xl p-3 flex flex-col gap-1 backdrop-blur-md">
+                                <a href="{{ url_for('media') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">newspaper</span>
                                     <span class="font-bold text-sm">Media</span>
                                 </a>
-                                <a href="{{ url_for('stories') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('stories') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">rate_review</span>
                                     <span class="font-bold text-sm">Stories</span>
                                 </a>
-                                <a href="{{ url_for('careers') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('careers') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">work</span>
                                     <span class="font-bold text-sm">Careers</span>
                                 </a>
-                                <a href="{{ url_for('contact') }}" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
+                                <a href="{{ url_for('contact') }}"
+                                    class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-primary-container/20 hover:text-primary transition-colors text-on-surface-variant">
                                     <span class="material-symbols-outlined text-primary text-xl">mail</span>
                                     <span class="font-bold text-sm">Contact Us</span>
                                 </a>
@@ -214,7 +243,8 @@
 
                 <!-- Enquire / Visit CTA Button -->
                 <div class="hidden lg:flex items-center">
-                    <a href="{{ url_for('contact') }}" class="bg-primary-container text-on-primary-container font-extrabold px-6 py-2.5 rounded-full shadow-sm hover:scale-105 border-b-4 border-amber-500 active:translate-y-0.5 transition-all">
+                    <a href="{{ url_for('contact') }}"
+                        class="bg-primary-container text-on-primary-container font-extrabold px-6 py-2.5 rounded-full shadow-sm hover:scale-105 border-b-4 border-amber-500 active:translate-y-0.5 transition-all">
                         Enquire Now
                     </a>
                 </div>
@@ -229,78 +259,103 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-surface-container border-b-4 border-primary-container px-4 pt-2 pb-6 space-y-2">
-            <a href="{{ url_for('index') }}" class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Home</a>
-            
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-surface-container border-b-4 border-primary-container px-4 pt-2 pb-6 space-y-2">
+            <a href="{{ url_for('index') }}"
+                class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Home</a>
+
             <!-- Mobile Programs Accordion -->
             <div>
-                <button data-accordion-toggle="mobile-programs-accordion" class="w-full flex justify-between items-center px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">
+                <button data-accordion-toggle="mobile-programs-accordion"
+                    class="w-full flex justify-between items-center px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">
                     <span>Programs</span>
                     <span class="material-symbols-outlined accordion-arrow text-xl">expand_more</span>
                 </button>
-                <div id="mobile-programs-accordion" class="hidden pl-4 pr-2 py-2 space-y-1 bg-surface-container-low rounded-xl mt-1">
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                <div id="mobile-programs-accordion"
+                    class="hidden pl-4 pr-2 py-2 space-y-1 bg-surface-container-low rounded-xl mt-1">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">child_care</span> Toddlers Club
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">toys</span> Playgroup
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">nature_people</span> Nursery
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">palette</span> Junior KG
                     </a>
-                    <a href="{{ url_for('senior_kg') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('senior_kg') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">auto_stories</span> Senior KG
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">family_restroom</span> Daycare
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">sports_soccer</span> Activity Club
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">spellcheck</span> Phonics Matrix
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">rocket_launch</span> STEAM Program
                     </a>
-                    <a href="{{ url_for('programs') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('programs') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">emoji_events</span> Olympiad
                     </a>
                 </div>
             </div>
 
-            <a href="{{ url_for('admissions') }}" class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Admissions</a>
-            <a href="{{ url_for('franchise') }}" class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Franchise</a>
-            <a href="{{ url_for('branches') }}" class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Branches</a>
-            <a href="{{ url_for('about') }}" class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">About Us</a>
+            <a href="{{ url_for('admissions') }}"
+                class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Admissions</a>
+            <a href="{{ url_for('franchise') }}"
+                class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Franchise</a>
+            <a href="{{ url_for('branches') }}"
+                class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">Branches</a>
+            <a href="{{ url_for('about') }}"
+                class="block px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">About Us</a>
 
             <!-- Mobile More Accordion -->
             <div>
-                <button data-accordion-toggle="mobile-more-accordion" class="w-full flex justify-between items-center px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">
+                <button data-accordion-toggle="mobile-more-accordion"
+                    class="w-full flex justify-between items-center px-3 py-2 rounded-md font-bold text-on-surface hover:bg-primary-container/20">
                     <span>More</span>
                     <span class="material-symbols-outlined accordion-arrow text-xl">expand_more</span>
                 </button>
-                <div id="mobile-more-accordion" class="hidden pl-4 pr-2 py-2 space-y-1 bg-surface-container-low rounded-xl mt-1">
-                    <a href="{{ url_for('media') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                <div id="mobile-more-accordion"
+                    class="hidden pl-4 pr-2 py-2 space-y-1 bg-surface-container-low rounded-xl mt-1">
+                    <a href="{{ url_for('media') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">newspaper</span> Media
                     </a>
-                    <a href="{{ url_for('stories') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('stories') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">rate_review</span> Stories
                     </a>
-                    <a href="{{ url_for('careers') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('careers') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">work</span> Careers
                     </a>
-                    <a href="{{ url_for('contact') }}" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
+                    <a href="{{ url_for('contact') }}"
+                        class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-primary-container/20">
                         <span class="material-symbols-outlined text-primary text-lg">mail</span> Contact Us
                     </a>
                 </div>
             </div>
 
             <div class="pt-2">
-                <a href="{{ url_for('contact') }}" class="block text-center bg-primary-container text-on-primary-container font-extrabold px-6 py-3 rounded-full shadow-sm">
+                <a href="{{ url_for('contact') }}"
+                    class="block text-center bg-primary-container text-on-primary-container font-extrabold px-6 py-3 rounded-full shadow-sm">
                     Enquire Now
                 </a>
             </div>
@@ -315,7 +370,8 @@
 
     <!-- Master Footer -->
     {% block footer %}
-    <footer class="bg-surface-container-highest text-on-surface rounded-t-3xl pt-16 pb-8 px-6 mt-12 border-t-8 border-primary-container">
+    <footer
+        class="bg-surface-container-highest text-on-surface rounded-t-3xl pt-16 pb-8 px-6 mt-12 border-t-8 border-primary-container">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto mb-12">
             <div class="col-span-1 md:col-span-1">
                 <div class="flex items-center gap-3 mb-4">
@@ -325,12 +381,19 @@
                     <span class="font-headline-sm text-xl font-extrabold text-primary">Apna Preschool</span>
                 </div>
                 <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
-                    Providing a joyful platform for your child's first step into the world of education with love, play, and security.
+                    Providing a joyful platform for your child's first step into the world of education with love, play,
+                    and security.
                 </p>
                 <div class="flex gap-4 text-primary">
-                    <a href="#" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary-container transition-colors"><span class="material-symbols-outlined">thumb_up</span></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary-container transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary-container transition-colors"><span class="material-symbols-outlined">smart_display</span></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary-container transition-colors"><span
+                            class="material-symbols-outlined">thumb_up</span></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary-container transition-colors"><span
+                            class="material-symbols-outlined">photo_camera</span></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary-container transition-colors"><span
+                            class="material-symbols-outlined">smart_display</span></a>
                 </div>
             </div>
 
@@ -338,21 +401,29 @@
                 <h4 class="font-headline-sm font-extrabold text-primary mb-4">Quick Links</h4>
                 <ul class="space-y-2 text-sm text-on-surface-variant font-semibold">
                     <li><a href="{{ url_for('about') }}" class="hover:text-primary transition-colors">About Us</a></li>
-                    <li><a href="{{ url_for('programs') }}" class="hover:text-primary transition-colors">Our Programs</a></li>
-                    <li><a href="{{ url_for('senior_kg') }}" class="hover:text-primary transition-colors">Senior KG</a></li>
-                    <li><a href="{{ url_for('admissions') }}" class="hover:text-primary transition-colors">Admissions</a></li>
-                    <li><a href="{{ url_for('franchise') }}" class="hover:text-primary transition-colors">Franchise</a></li>
+                    <li><a href="{{ url_for('programs') }}" class="hover:text-primary transition-colors">Our
+                            Programs</a></li>
+                    <li><a href="{{ url_for('senior_kg') }}" class="hover:text-primary transition-colors">Senior KG</a>
+                    </li>
+                    <li><a href="{{ url_for('admissions') }}"
+                            class="hover:text-primary transition-colors">Admissions</a></li>
+                    <li><a href="{{ url_for('franchise') }}" class="hover:text-primary transition-colors">Franchise</a>
+                    </li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="font-headline-sm font-extrabold text-primary mb-4">Explore More</h4>
                 <ul class="space-y-2 text-sm text-on-surface-variant font-semibold">
-                    <li><a href="{{ url_for('branches') }}" class="hover:text-primary transition-colors">Find Branches</a></li>
-                    <li><a href="{{ url_for('media') }}" class="hover:text-primary transition-colors">Media & News</a></li>
-                    <li><a href="{{ url_for('stories') }}" class="hover:text-primary transition-colors">Parent Stories</a></li>
+                    <li><a href="{{ url_for('branches') }}" class="hover:text-primary transition-colors">Find
+                            Branches</a></li>
+                    <li><a href="{{ url_for('media') }}" class="hover:text-primary transition-colors">Media & News</a>
+                    </li>
+                    <li><a href="{{ url_for('stories') }}" class="hover:text-primary transition-colors">Parent
+                            Stories</a></li>
                     <li><a href="{{ url_for('careers') }}" class="hover:text-primary transition-colors">Careers</a></li>
-                    <li><a href="{{ url_for('contact') }}" class="hover:text-primary transition-colors">Contact Us</a></li>
+                    <li><a href="{{ url_for('contact') }}" class="hover:text-primary transition-colors">Contact Us</a>
+                    </li>
                 </ul>
             </div>
 
@@ -361,19 +432,68 @@
                 <p class="text-sm text-on-surface-variant mb-2">123 Education Lane, Learning City</p>
                 <p class="text-sm text-on-surface-variant mb-2">Email: admissions@apnapreschool.com</p>
                 <p class="text-sm text-on-surface-variant mb-4">Phone: +91 98765 43210</p>
-                <a href="{{ url_for('contact') }}" class="inline-block bg-secondary text-on-secondary font-bold text-xs px-4 py-2 rounded-full uppercase tracking-wider hover:opacity-90 transition-opacity">
+                <a href="{{ url_for('contact') }}"
+                    class="inline-block bg-secondary text-on-secondary font-bold text-xs px-4 py-2 rounded-full uppercase tracking-wider hover:opacity-90 transition-opacity">
                     Book a Campus Visit
                 </a>
             </div>
         </div>
 
-        <div class="border-t border-outline-variant/30 pt-6 text-center text-xs text-on-surface-variant">
-            &copy; 2026 Apna Preschool. All rights reserved. Designed from Google Stitch.
+        <div
+            class="border-t border-outline-variant/30 pt-6 text-center text-xs text-on-surface-variant flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-3 flex-wrap">
+            <span>&copy; 2026 Apna Preschool. </span>
+            <span class="hidden sm:inline opacity-40">|</span>
+            <span class="font-bold text-primary">Designed &amp; Developed by Mohit</span>
+            <span class="hidden sm:inline opacity-40">|</span>
+            <span>&copy; 2026 Nexvora Tech LLP. All Rights Reserved.</span>
         </div>
     </footer>
+    {% endblock %}
+
+    <!-- Floating Contact Action System -->
+    {% block floating_contact %}
+    <aside aria-label="Quick Contact Options"
+        class="fixed bottom-6 right-6 z-50 flex flex-col gap-2.5 items-end select-none">
+        <!-- Call Button -->
+        <a href="tel:+919876543210" aria-label="Call Us"
+            class="group relative flex items-center justify-center bg-[#fff3d6] hover:bg-[#ffe7ab] text-[#6f5400] border border-[#f6bf22]/40 shadow-md hover:shadow-lg rounded-full px-3.5 py-2.5 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 text-xs font-bold gap-2">
+            <span class="material-symbols-outlined text-[#775a00] text-xl"
+                style="font-variation-settings: 'FILL' 1;">call</span>
+            <span class="hidden md:inline font-extrabold uppercase tracking-wide">Call</span>
+            <span
+                class="absolute right-full mr-2 bg-inverse-surface text-inverse-on-surface text-xs font-bold px-2.5 py-1.5 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 whitespace-nowrap md:hidden">
+                Call +91 98765 43210
+            </span>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Chat"
+            class="group relative flex items-center justify-center bg-[#e6f8ee] hover:bg-[#c9f1dc] text-[#005230] border border-[#86efac]/50 shadow-md hover:shadow-lg rounded-full px-3.5 py-2.5 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 text-xs font-bold gap-2">
+            <span class="material-symbols-outlined text-[#059669] text-xl"
+                style="font-variation-settings: 'FILL' 1;">chat</span>
+            <span class="hidden md:inline font-extrabold uppercase tracking-wide">WhatsApp</span>
+            <span
+                class="absolute right-full mr-2 bg-inverse-surface text-inverse-on-surface text-xs font-bold px-2.5 py-1.5 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 whitespace-nowrap md:hidden">
+                WhatsApp Chat
+            </span>
+        </a>
+
+        <!-- Callback Button -->
+        <a href="{{ url_for('contact') }}" aria-label="Request Callback"
+            class="group relative flex items-center justify-center bg-[#e0f2fe] hover:bg-[#bae6fd] text-[#0369a1] border border-[#7bd0ff]/50 shadow-md hover:shadow-lg rounded-full px-3.5 py-2.5 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 text-xs font-bold gap-2">
+            <span class="material-symbols-outlined text-[#0284c7] text-xl"
+                style="font-variation-settings: 'FILL' 1;">phone_callback</span>
+            <span class="hidden md:inline font-extrabold uppercase tracking-wide">Callback</span>
+            <span
+                class="absolute right-full mr-2 bg-inverse-surface text-inverse-on-surface text-xs font-bold px-2.5 py-1.5 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 whitespace-nowrap md:hidden">
+                Request Callback
+            </span>
+        </a>
+    </aside>
     {% endblock %}
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     {% block extra_js %}{% endblock %}
 </body>
+
 </html>

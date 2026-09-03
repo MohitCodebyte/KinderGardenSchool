@@ -1,397 +1,494 @@
 {% extends "base.html" %}
 
-{% block title %}Apna School Ka Naam - Playful Preschool Learning{% endblock %}
+{% block title %}King Kids - Playful Preschool Learning{% endblock %}
 
 {% block content %}
 <section class="relative pt-32 pb-xl px-margin overflow-hidden bg-gradient-to-b from-secondary-fixed/30 to-background">
-<!-- Floating Elements -->
-<div class="absolute top-20 left-10 text-primary-container animate-float" style="animation-delay: 0s;">
-<span class="material-symbols-outlined text-[60px]" style="font-variation-settings: 'FILL' 1;">cloud</span>
-</div>
-<div class="absolute top-40 right-20 text-tertiary-container animate-float" style="animation-delay: 2s;">
-<span class="material-symbols-outlined text-[80px]" style="font-variation-settings: 'FILL' 1;">sunny</span>
-</div>
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-xl items-center relative z-10">
-<div>
-<h1 class="font-headline-xl text-headline-xl text-on-background mb-md">
-                    Where Young <span class="text-secondary">Minds Bloom</span> 🌸
-                </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-lg">
-                    Discover a magical nurturing environment where every child's curiosity is celebrated. From tiny steps to giant leaps, we make learning a joyful adventure!
-                </p>
-<div class="flex gap-md">
-<button class="bg-primary-container text-on-primary-container font-bold px-xl py-md rounded-full btn-pushable text-headline-sm">Enroll Now</button>
-<button class="border-2 border-primary text-primary font-bold px-lg py-md rounded-full hover:bg-primary/5 transition-colors">Learn More</button>
-</div>
-</div>
-<div class="relative flex justify-center">
-<div class="relative w-full max-w-md">
-<img alt="Mascot Panda" class="w-full h-auto drop-shadow-2xl animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9GGHTmVby8y6zagZoAtQuOkxg_FWV4r85caGkLxrqXiXy6oat-Dv-o56sqG5pM4YT3vDSZrsZvPNDgoft8pdAoeanDiohUNt30s30oL51JF5d02BJVpjuBjnHKQftJvTRsVoMP9E0pKBf3V0EXXmlBXA8WVL3KbPb-DFYJ3N_4TN0O8pvC2WepacCHmdvpc0ENQBzkAr_uo2xxesqyF4UOj0be-zqE7162b1M4K5QN18zOlw_GT92O1XQ_i3dJqqy4Zj6V0M3bWy"/>
-<!-- Balloons Decorations -->
-<div class="absolute -top-10 -right-10 text-error flex flex-col items-center">
-<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">pentagon</span>
-<div class="w-1 h-12 bg-outline-variant"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="wave-divider absolute bottom-0 left-0 w-full">
-<svg fill="none" viewbox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 60C120 20 240 20 360 60C480 100 600 100 720 60C840 20 960 20 1080 60C1200 100 1320 100 1440 60V120H0V60Z" fill="#fdf2e2"></path>
-</svg>
-</div>
+    <!-- Floating Elements -->
+    <div class="absolute top-20 left-10 text-primary-container animate-float" style="animation-delay: 0s;">
+        <span class="material-symbols-outlined text-[60px]" style="font-variation-settings: 'FILL' 1;">cloud</span>
+    </div>
+    <div class="absolute top-40 right-20 text-tertiary-container animate-float" style="animation-delay: 2s;">
+        <span class="material-symbols-outlined text-[80px]" style="font-variation-settings: 'FILL' 1;">sunny</span>
+    </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-xl items-center relative z-10">
+        <div>
+            <h1 class="font-headline-xl text-headline-xl text-on-background mb-md">
+                Where Young <span class="text-secondary">Minds Bloom</span> 🌸
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-lg">
+                Discover a magical nurturing environment where every child's curiosity is celebrated. From tiny steps to
+                giant leaps, we make learning a joyful adventure!
+            </p>
+            <div class="flex gap-md">
+                <button
+                    class="bg-primary-container text-on-primary-container font-bold px-xl py-md rounded-full btn-pushable text-headline-sm">Enroll
+                    Now</button>
+                <button
+                    class="border-2 border-primary text-primary font-bold px-lg py-md rounded-full hover:bg-primary/5 transition-colors">Learn
+                    More</button>
+            </div>
+        </div>
+        <div class="relative flex justify-center">
+            <div class="relative w-full max-w-md">
+                <img alt="Mascot Panda" class="w-full h-auto drop-shadow-2xl animate-float"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9GGHTmVby8y6zagZoAtQuOkxg_FWV4r85caGkLxrqXiXy6oat-Dv-o56sqG5pM4YT3vDSZrsZvPNDgoft8pdAoeanDiohUNt30s30oL51JF5d02BJVpjuBjnHKQftJvTRsVoMP9E0pKBf3V0EXXmlBXA8WVL3KbPb-DFYJ3N_4TN0O8pvC2WepacCHmdvpc0ENQBzkAr_uo2xxesqyF4UOj0be-zqE7162b1M4K5QN18zOlw_GT92O1XQ_i3dJqqy4Zj6V0M3bWy" />
+                <!-- Balloons Decorations -->
+                <div class="absolute -top-10 -right-10 text-error flex flex-col items-center">
+                    <span class="material-symbols-outlined text-[48px]"
+                        style="font-variation-settings: 'FILL' 1;">pentagon</span>
+                    <div class="w-1 h-12 bg-outline-variant"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-divider absolute bottom-0 left-0 w-full">
+        <svg fill="none" viewbox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0 60C120 20 240 20 360 60C480 100 600 100 720 60C840 20 960 20 1080 60C1200 100 1320 100 1440 60V120H0V60Z"
+                fill="#fdf2e2"></path>
+        </svg>
+    </div>
 </section>
 <section class="bg-surface-container-low py-xl px-margin">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-xl items-center">
-<div class="grid grid-cols-2 gap-md relative">
-<!-- Decorative Pencils -->
-<div class="absolute -top-10 -left-10 text-primary-container -rotate-12">
-<span class="material-symbols-outlined text-[40px]">edit</span>
-</div>
-<div class="rounded-full overflow-hidden border-8 border-white paper-cut-shadow aspect-square">
-<img class="w-full h-full object-cover" data-alt="A happy diverse group of preschool children playing together with colorful wooden blocks in a bright, sun-filled classroom setting. Soft lighting, vibrant primary colors, high-end commercial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0r8bgUhkJU1Tvy4A2_w6kwQTrLRdubpum4z00bmHfpdnVTW2HMh1jl7KTKLpb_Kkj0NrmcMWsKTzH7oAjm9a_MzxyHHpAQXPqEM93J8Mi9HJpgJyj3oTzptFOd7bNvDv2eqGAgmJ23BCE35kU-j7RrbZFsuDAH6fJkQmGcJBRKIB6g5gqOil_ke00f0aH2LaL7S7QYfPbwrx2GLI8baxO5dE47CMEwM-36ZllLZ3uLb0AEhcO805e3znS2FMRd3b9eiuaeiTlHDJa"/>
-</div>
-<div class="rounded-full overflow-hidden border-8 border-white paper-cut-shadow aspect-square mt-xl">
-<img class="w-full h-full object-cover" data-alt="A close-up portrait of a toddler girl laughing while painting with her hands. Her hands are covered in bright orange and blue tempera paint. High-key lighting, soft bokeh background, joyful preschool atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3WCoippglS0luYcxbhnnntYt5DTNokjgoH6DWjVfckjoj7Rkn5tw7bgqF_gTvc-tJrmCLXs-pzf9zCj1IfSy7dhq4LzblbBb3wDpNS2buinAp09KVWtC4fCqrm-hSwxY1PSklGL_2rZfPfFZg8SAF8Ooo3dBZLZNYqod1iZKsXkK7Rt3H4P1EzZLrgpsPDzv2O2WekIkFKVddg5afvzGkOfd4NebFI2vQkfdiKDQrd4KKNvTQGrZk4lEbyTJNLNlcyNs8bIsz08dY"/>
-</div>
-</div>
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Nurturing Tomorrow's Leaders Today</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
-                    At Apna School Ka Naam, we believe education goes beyond books. Our play-based curriculum is designed to spark imagination, build confidence, and foster a love for lifelong learning.
-                </p>
-<div class="space-y-sm">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-bold">Child-Centric Pedagogies</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-bold">Safe &amp; Stimulating Environment</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-bold">Holistic Development Modules</span>
-</div>
-</div>
-</div>
-</div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-xl items-center">
+        <div class="grid grid-cols-2 gap-md relative">
+            <!-- Decorative Pencils -->
+            <div class="absolute -top-10 -left-10 text-primary-container -rotate-12">
+                <span class="material-symbols-outlined text-[40px]">edit</span>
+            </div>
+            <div class="rounded-full overflow-hidden border-8 border-white paper-cut-shadow aspect-square">
+                <img class="w-full h-full object-cover"
+                    data-alt="A happy diverse group of preschool children playing together with colorful wooden blocks in a bright, sun-filled classroom setting. Soft lighting, vibrant primary colors, high-end commercial photography style."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0r8bgUhkJU1Tvy4A2_w6kwQTrLRdubpum4z00bmHfpdnVTW2HMh1jl7KTKLpb_Kkj0NrmcMWsKTzH7oAjm9a_MzxyHHpAQXPqEM93J8Mi9HJpgJyj3oTzptFOd7bNvDv2eqGAgmJ23BCE35kU-j7RrbZFsuDAH6fJkQmGcJBRKIB6g5gqOil_ke00f0aH2LaL7S7QYfPbwrx2GLI8baxO5dE47CMEwM-36ZllLZ3uLb0AEhcO805e3znS2FMRd3b9eiuaeiTlHDJa" />
+            </div>
+            <div class="rounded-full overflow-hidden border-8 border-white paper-cut-shadow aspect-square mt-xl">
+                <img class="w-full h-full object-cover"
+                    data-alt="A close-up portrait of a toddler girl laughing while painting with her hands. Her hands are covered in bright orange and blue tempera paint. High-key lighting, soft bokeh background, joyful preschool atmosphere."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3WCoippglS0luYcxbhnnntYt5DTNokjgoH6DWjVfckjoj7Rkn5tw7bgqF_gTvc-tJrmCLXs-pzf9zCj1IfSy7dhq4LzblbBb3wDpNS2buinAp09KVWtC4fCqrm-hSwxY1PSklGL_2rZfPfFZg8SAF8Ooo3dBZLZNYqod1iZKsXkK7Rt3H4P1EzZLrgpsPDzv2O2WekIkFKVddg5afvzGkOfd4NebFI2vQkfdiKDQrd4KKNvTQGrZk4lEbyTJNLNlcyNs8bIsz08dY" />
+            </div>
+        </div>
+        <div>
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-md">Nurturing Tomorrow's Leaders Today</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+                At Apna School, we believe education goes beyond books. Our play-based curriculum is designed to
+                spark imagination, build confidence, and foster a love for lifelong learning.
+            </p>
+            <div class="space-y-sm">
+                <div class="flex items-center gap-sm">
+                    <span class="material-symbols-outlined text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span class="font-bold">Child-Centric Pedagogies</span>
+                </div>
+                <div class="flex items-center gap-sm">
+                    <span class="material-symbols-outlined text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span class="font-bold">Safe &amp; Stimulating Environment</span>
+                </div>
+                <div class="flex items-center gap-sm">
+                    <span class="material-symbols-outlined text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span class="font-bold">Holistic Development Modules</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="py-xl px-margin max-w-7xl mx-auto">
-<div class="text-center mb-xl">
-<h2 class="font-headline-lg text-headline-lg text-on-background">Our Learning Programs</h2>
-<p class="font-body-lg text-on-surface-variant">Tailored educational journeys for every age group</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Playgroup -->
-<div class="bg-secondary-fixed p-lg rounded-lg paper-cut-shadow border-t-4 border-secondary hover:scale-105 transition-all">
-<span class="material-symbols-outlined text-[48px] text-secondary mb-md">child_care</span>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Playgroup</h3>
-<p class="text-on-secondary-fixed-variant mb-md">Introduction to social interaction and sensory play for ages 1.5 - 2.5 years.</p>
-<button class="bg-white/50 text-secondary font-bold px-md py-xs rounded-full">View More</button>
-</div>
-<!-- Nursery -->
-<div class="bg-tertiary-fixed p-lg rounded-lg paper-cut-shadow border-t-4 border-tertiary hover:scale-105 transition-all">
-<span class="material-symbols-outlined text-[48px] text-tertiary mb-md">auto_stories</span>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Nursery</h3>
-<p class="text-on-tertiary-fixed-variant mb-md">Language development and early literacy skills for kids 2.5 - 3.5 years old.</p>
-<button class="bg-white/50 text-tertiary font-bold px-md py-xs rounded-full">View More</button>
-</div>
-<!-- Junior KG -->
-<div class="bg-primary-fixed p-lg rounded-lg paper-cut-shadow border-t-4 border-primary hover:scale-105 transition-all">
-<span class="material-symbols-outlined text-[48px] text-primary mb-md">calculate</span>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Junior KG</h3>
-<p class="text-on-primary-fixed-variant mb-md">Math foundations and creative expression for ages 3.5 - 4.5 years.</p>
-<button class="bg-white/50 text-primary font-bold px-md py-xs rounded-full">View More</button>
-</div>
-<!-- Senior KG -->
-<div class="bg-secondary-container p-lg rounded-lg paper-cut-shadow border-t-4 border-on-secondary-container hover:scale-105 transition-all">
-<span class="material-symbols-outlined text-[48px] text-on-secondary-container mb-md">school</span>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Senior KG</h3>
-<p class="text-on-secondary-container mb-md">Preparation for primary school with advanced cognitive activities for 4.5 - 5.5 years.</p>
-<button class="bg-white/50 text-on-secondary-container font-bold px-md py-xs rounded-full">View More</button>
-</div>
-<!-- Daycare -->
-<div class="bg-surface-variant p-lg rounded-lg paper-cut-shadow border-t-4 border-outline hover:scale-105 transition-all">
-<span class="material-symbols-outlined text-[48px] text-outline mb-md">bedtime</span>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Daycare</h3>
-<p class="text-on-surface-variant mb-md">A safe home away from home with nutritious meals and nap times.</p>
-<button class="bg-white/50 text-outline font-bold px-md py-xs rounded-full">View More</button>
-</div>
-<!-- Activity Club -->
-<div class="bg-tertiary-container p-lg rounded-lg paper-cut-shadow border-t-4 border-tertiary hover:scale-105 transition-all">
-<span class="material-symbols-outlined text-[48px] text-tertiary mb-md">palette</span>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Activity Club</h3>
-<p class="text-on-tertiary-container mb-md">Extra-curricular fun including dance, music, and karate classes.</p>
-<button class="bg-white/50 text-tertiary font-bold px-md py-xs rounded-full">View More</button>
-</div>
-</div>
+    <div class="text-center mb-xl">
+        <h2 class="font-headline-lg text-headline-lg text-on-background">Our Learning Programs</h2>
+        <p class="font-body-lg text-on-surface-variant">Tailored educational journeys for every age group</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <!-- Playgroup -->
+        <div
+            class="bg-secondary-fixed p-lg rounded-lg paper-cut-shadow border-t-4 border-secondary hover:scale-105 transition-all">
+            <span class="material-symbols-outlined text-[48px] text-secondary mb-md">child_care</span>
+            <h3 class="font-headline-sm text-headline-sm mb-sm">Playgroup</h3>
+            <p class="text-on-secondary-fixed-variant mb-md">Introduction to social interaction and sensory play for
+                ages 1.5 - 2.5 years.</p>
+            <button class="bg-white/50 text-secondary font-bold px-md py-xs rounded-full">View More</button>
+        </div>
+        <!-- Nursery -->
+        <div
+            class="bg-tertiary-fixed p-lg rounded-lg paper-cut-shadow border-t-4 border-tertiary hover:scale-105 transition-all">
+            <span class="material-symbols-outlined text-[48px] text-tertiary mb-md">auto_stories</span>
+            <h3 class="font-headline-sm text-headline-sm mb-sm">Nursery</h3>
+            <p class="text-on-tertiary-fixed-variant mb-md">Language development and early literacy skills for kids 2.5
+                - 3.5 years old.</p>
+            <button class="bg-white/50 text-tertiary font-bold px-md py-xs rounded-full">View More</button>
+        </div>
+        <!-- Junior KG -->
+        <div
+            class="bg-primary-fixed p-lg rounded-lg paper-cut-shadow border-t-4 border-primary hover:scale-105 transition-all">
+            <span class="material-symbols-outlined text-[48px] text-primary mb-md">calculate</span>
+            <h3 class="font-headline-sm text-headline-sm mb-sm">Junior KG</h3>
+            <p class="text-on-primary-fixed-variant mb-md">Math foundations and creative expression for ages 3.5 - 4.5
+                years.</p>
+            <button class="bg-white/50 text-primary font-bold px-md py-xs rounded-full">View More</button>
+        </div>
+        <!-- Senior KG -->
+        <div
+            class="bg-secondary-container p-lg rounded-lg paper-cut-shadow border-t-4 border-on-secondary-container hover:scale-105 transition-all">
+            <span class="material-symbols-outlined text-[48px] text-on-secondary-container mb-md">school</span>
+            <h3 class="font-headline-sm text-headline-sm mb-sm">Senior KG</h3>
+            <p class="text-on-secondary-container mb-md">Preparation for primary school with advanced cognitive
+                activities for 4.5 - 5.5 years.</p>
+            <button class="bg-white/50 text-on-secondary-container font-bold px-md py-xs rounded-full">View
+                More</button>
+        </div>
+        <!-- Daycare -->
+        <div
+            class="bg-surface-variant p-lg rounded-lg paper-cut-shadow border-t-4 border-outline hover:scale-105 transition-all">
+            <span class="material-symbols-outlined text-[48px] text-outline mb-md">bedtime</span>
+            <h3 class="font-headline-sm text-headline-sm mb-sm">Daycare</h3>
+            <p class="text-on-surface-variant mb-md">A safe home away from home with nutritious meals and nap times.</p>
+            <button class="bg-white/50 text-outline font-bold px-md py-xs rounded-full">View More</button>
+        </div>
+        <!-- Activity Club -->
+        <div
+            class="bg-tertiary-container p-lg rounded-lg paper-cut-shadow border-t-4 border-tertiary hover:scale-105 transition-all">
+            <span class="material-symbols-outlined text-[48px] text-tertiary mb-md">palette</span>
+            <h3 class="font-headline-sm text-headline-sm mb-sm">Activity Club</h3>
+            <p class="text-on-tertiary-container mb-md">Extra-curricular fun including dance, music, and karate classes.
+            </p>
+            <button class="bg-white/50 text-tertiary font-bold px-md py-xs rounded-full">View More</button>
+        </div>
+    </div>
 </section>
 <section class="bg-surface py-xl px-margin">
-<div class="max-w-7xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-center mb-xl">Why Parents Love Us</h2>
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-md text-center">
-<div class="flex flex-col items-center">
-<div class="w-20 h-20 bg-secondary-fixed rounded-full flex items-center justify-center mb-sm text-secondary">
-<span class="material-symbols-outlined text-[32px]">security</span>
-</div>
-<span class="font-bold">CCTV &amp; Safety</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-20 bg-primary-fixed rounded-full flex items-center justify-center mb-sm text-primary">
-<span class="material-symbols-outlined text-[32px]">groups</span>
-</div>
-<span class="font-bold">Expert Teachers</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-20 bg-tertiary-fixed rounded-full flex items-center justify-center mb-sm text-tertiary">
-<span class="material-symbols-outlined text-[32px]">clean_hands</span>
-</div>
-<span class="font-bold">Strict Hygiene</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-sm text-on-secondary-container">
-<span class="material-symbols-outlined text-[32px]">extension</span>
-</div>
-<span class="font-bold">Active Learning</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-sm text-primary">
-<span class="material-symbols-outlined text-[32px]">sentiment_very_satisfied</span>
-</div>
-<span class="font-bold">Happy Vibe</span>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-20 h-20 bg-tertiary-container rounded-full flex items-center justify-center mb-sm text-tertiary">
-<span class="material-symbols-outlined text-[32px]">sports_soccer</span>
-</div>
-<span class="font-bold">After School</span>
-</div>
-</div>
-</div>
+    <div class="max-w-7xl mx-auto">
+        <h2 class="font-headline-lg text-headline-lg text-center mb-xl">Why Parents Love Us</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-md text-center">
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-20 h-20 bg-secondary-fixed rounded-full flex items-center justify-center mb-sm text-secondary">
+                    <span class="material-symbols-outlined text-[32px]">security</span>
+                </div>
+                <span class="font-bold">CCTV &amp; Safety</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-20 h-20 bg-primary-fixed rounded-full flex items-center justify-center mb-sm text-primary">
+                    <span class="material-symbols-outlined text-[32px]">groups</span>
+                </div>
+                <span class="font-bold">Expert Teachers</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-20 h-20 bg-tertiary-fixed rounded-full flex items-center justify-center mb-sm text-tertiary">
+                    <span class="material-symbols-outlined text-[32px]">clean_hands</span>
+                </div>
+                <span class="font-bold">Strict Hygiene</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-sm text-on-secondary-container">
+                    <span class="material-symbols-outlined text-[32px]">extension</span>
+                </div>
+                <span class="font-bold">Active Learning</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-sm text-primary">
+                    <span class="material-symbols-outlined text-[32px]">sentiment_very_satisfied</span>
+                </div>
+                <span class="font-bold">Happy Vibe</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-20 h-20 bg-tertiary-container rounded-full flex items-center justify-center mb-sm text-tertiary">
+                    <span class="material-symbols-outlined text-[32px]">sports_soccer</span>
+                </div>
+                <span class="font-bold">After School</span>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="py-xl px-margin max-w-5xl mx-auto overflow-hidden">
-<h2 class="font-headline-lg text-headline-lg text-center mb-xl">Our Educational Journey</h2>
-<div class="relative">
-<!--  Path -->
-<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-2 bg-primary-fixed/30 -translate-x-1/2 rounded-full"></div>
-<div class="space-y-xl relative">
-<!-- Step 1 -->
-<div class="flex flex-col md:flex-row items-center gap-lg">
-<div class="md:w-1/2 text-right hidden md:block">
-<h3 class="font-headline-sm text-primary">Curiosity &amp; Discovery</h3>
-<p>We encourage questions and hands-on exploration to understand the world.</p>
-</div>
-<div class="relative z-10 w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white border-8 border-background font-bold text-xl shrink-0">1</div>
-<div class="md:w-1/2">
-<div class="bg-white p-md rounded-lg paper-cut-shadow md:hidden">
-<h3 class="font-headline-sm text-primary">Curiosity &amp; Discovery</h3>
-<p>We encourage questions and hands-on exploration.</p>
-</div>
-<img class="w-48 h-32 object-cover rounded-lg" data-alt="A curious toddler examining a large magnifying glass over a green leaf. Bright sunlight, outdoor preschool garden setting, playful and educational aesthetic with high contrast and warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKNRThX7hMk1PSpv2NUaio72_NN5Wd_EKUNl63DwI6ElsAgHPnqO3jdsY2yXjW4PCeKCizFB5z0avAUku8aX-ySgEGPxcfcplPDrKBiugZ1T-yf-AVla-REYZQNpqnVzo5EkF7UcePYszwjArpMzmLptT50MxUcyrGU8kPUk7tDDW-F-anA8gm9_lIuRRJgpvuWmSOxSJSJRwU547t3RHH51jhcO2Utk-vNJZk7mNMOXOI4AGaWdt4ty1_SqPzuo1OWpX3EFZqutYF"/>
-</div>
-</div>
-<!-- Step 2 -->
-<div class="flex flex-col md:flex-row-reverse items-center gap-lg">
-<div class="md:w-1/2 text-left hidden md:block">
-<h3 class="font-headline-sm text-secondary">Creative Expression</h3>
-<p>Art, music, and drama form the core of our imaginative development.</p>
-</div>
-<div class="relative z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white border-8 border-background font-bold text-xl shrink-0">2</div>
-<div class="md:w-1/2 flex justify-end">
-<div class="bg-white p-md rounded-lg paper-cut-shadow md:hidden">
-<h3 class="font-headline-sm text-secondary">Creative Expression</h3>
-<p>Art and music form our core development.</p>
-</div>
-<img class="w-48 h-32 object-cover rounded-lg" data-alt="A preschool classroom with kids wearing colorful smocks, painting together on a giant canvas. Splashes of paint, bright primary colors, playful atmosphere, professional wide-angle shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVVSdtAPAI2NvtyPmsxlWAKKakMubTin0KSmKCA3GMhMqZlFVMUiKIexCELWWByO6dJ1Xiv8TDBruStPIcDmIsIkAVz_uB0_eTg8c_Lw6pjLTQT-HVCaXroR0n5DTAsPYhS1PdLRPjEqSpbPMMB_gP1ZYgm5lU4TH17nkX_fDSSaz6cK--hVs45tFuflXom-Pe-qtHqyB1eRRqIrvqSDUS5w2qKBZgyT24OCJR_k2OQS7_srqQ3WMp_VJl1knEUecI_zkFSpE0FkKT"/>
-</div>
-</div>
-<!-- Step 3 -->
-<div class="flex flex-col md:flex-row items-center gap-lg">
-<div class="md:w-1/2 text-right hidden md:block">
-<h3 class="font-headline-sm text-tertiary">Social Confidence</h3>
-<p>Building friendships and learning empathy in a safe communal space.</p>
-</div>
-<div class="relative z-10 w-16 h-16 bg-tertiary rounded-full flex items-center justify-center text-white border-8 border-background font-bold text-xl shrink-0">3</div>
-<div class="md:w-1/2">
-<div class="bg-white p-md rounded-lg paper-cut-shadow md:hidden">
-<h3 class="font-headline-sm text-tertiary">Social Confidence</h3>
-<p>Building friendships and learning empathy.</p>
-</div>
-<img class="w-48 h-32 object-cover rounded-lg" data-alt="Two young boys sharing a toy truck and smiling at each other in a playroom. Soft morning light, cozy atmosphere, pastel colors, high-end child photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwbuCUC3rDuGtoVPBs5seOhGxdQy3d4096JbrxkSM4pNwm23s-W_-YaBtM2SXDY25xi4JXinlze5sF2Fl4jvcpybQ5v1OvgS2xqXlnS224yveEBAXAJ_2oGOGjvOyetI0Aki83XRNcwj1qYemsqtgG3frvAzu3MbJXQW2yoZ4zOb4rrgzTYTkIJZDcWljZY1UgtrFeNxA2SdCp-9dFlNZpJECeJ8eKHo5l5_hAzj47chpCtMoXGvC8FOse5EVrxajJtFp4M6FmCd5V"/>
-</div>
-</div>
-</div>
-</div>
+    <h2 class="font-headline-lg text-headline-lg text-center mb-xl">Our Educational Journey</h2>
+    <div class="relative">
+        <!--  Path -->
+        <div
+            class="hidden md:block absolute left-1/2 top-0 bottom-0 w-2 bg-primary-fixed/30 -translate-x-1/2 rounded-full">
+        </div>
+        <div class="space-y-xl relative">
+            <!-- Step 1 -->
+            <div class="flex flex-col md:flex-row items-center gap-lg">
+                <div class="md:w-1/2 text-right hidden md:block">
+                    <h3 class="font-headline-sm text-primary">Curiosity &amp; Discovery</h3>
+                    <p>We encourage questions and hands-on exploration to understand the world.</p>
+                </div>
+                <div
+                    class="relative z-10 w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white border-8 border-background font-bold text-xl shrink-0">
+                    1</div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-md rounded-lg paper-cut-shadow md:hidden">
+                        <h3 class="font-headline-sm text-primary">Curiosity &amp; Discovery</h3>
+                        <p>We encourage questions and hands-on exploration.</p>
+                    </div>
+                    <img class="w-48 h-32 object-cover rounded-lg"
+                        data-alt="A curious toddler examining a large magnifying glass over a green leaf. Bright sunlight, outdoor preschool garden setting, playful and educational aesthetic with high contrast and warm tones."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKNRThX7hMk1PSpv2NUaio72_NN5Wd_EKUNl63DwI6ElsAgHPnqO3jdsY2yXjW4PCeKCizFB5z0avAUku8aX-ySgEGPxcfcplPDrKBiugZ1T-yf-AVla-REYZQNpqnVzo5EkF7UcePYszwjArpMzmLptT50MxUcyrGU8kPUk7tDDW-F-anA8gm9_lIuRRJgpvuWmSOxSJSJRwU547t3RHH51jhcO2Utk-vNJZk7mNMOXOI4AGaWdt4ty1_SqPzuo1OWpX3EFZqutYF" />
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-lg">
+                <div class="md:w-1/2 text-left hidden md:block">
+                    <h3 class="font-headline-sm text-secondary">Creative Expression</h3>
+                    <p>Art, music, and drama form the core of our imaginative development.</p>
+                </div>
+                <div
+                    class="relative z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white border-8 border-background font-bold text-xl shrink-0">
+                    2</div>
+                <div class="md:w-1/2 flex justify-end">
+                    <div class="bg-white p-md rounded-lg paper-cut-shadow md:hidden">
+                        <h3 class="font-headline-sm text-secondary">Creative Expression</h3>
+                        <p>Art and music form our core development.</p>
+                    </div>
+                    <img class="w-48 h-32 object-cover rounded-lg"
+                        data-alt="A preschool classroom with kids wearing colorful smocks, painting together on a giant canvas. Splashes of paint, bright primary colors, playful atmosphere, professional wide-angle shot."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVVSdtAPAI2NvtyPmsxlWAKKakMubTin0KSmKCA3GMhMqZlFVMUiKIexCELWWByO6dJ1Xiv8TDBruStPIcDmIsIkAVz_uB0_eTg8c_Lw6pjLTQT-HVCaXroR0n5DTAsPYhS1PdLRPjEqSpbPMMB_gP1ZYgm5lU4TH17nkX_fDSSaz6cK--hVs45tFuflXom-Pe-qtHqyB1eRRqIrvqSDUS5w2qKBZgyT24OCJR_k2OQS7_srqQ3WMp_VJl1knEUecI_zkFSpE0FkKT" />
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex flex-col md:flex-row items-center gap-lg">
+                <div class="md:w-1/2 text-right hidden md:block">
+                    <h3 class="font-headline-sm text-tertiary">Social Confidence</h3>
+                    <p>Building friendships and learning empathy in a safe communal space.</p>
+                </div>
+                <div
+                    class="relative z-10 w-16 h-16 bg-tertiary rounded-full flex items-center justify-center text-white border-8 border-background font-bold text-xl shrink-0">
+                    3</div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-md rounded-lg paper-cut-shadow md:hidden">
+                        <h3 class="font-headline-sm text-tertiary">Social Confidence</h3>
+                        <p>Building friendships and learning empathy.</p>
+                    </div>
+                    <img class="w-48 h-32 object-cover rounded-lg"
+                        data-alt="Two young boys sharing a toy truck and smiling at each other in a playroom. Soft morning light, cozy atmosphere, pastel colors, high-end child photography style."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwbuCUC3rDuGtoVPBs5seOhGxdQy3d4096JbrxkSM4pNwm23s-W_-YaBtM2SXDY25xi4JXinlze5sF2Fl4jvcpybQ5v1OvgS2xqXlnS224yveEBAXAJ_2oGOGjvOyetI0Aki83XRNcwj1qYemsqtgG3frvAzu3MbJXQW2yoZ4zOb4rrgzTYTkIJZDcWljZY1UgtrFeNxA2SdCp-9dFlNZpJECeJ8eKHo5l5_hAzj47chpCtMoXGvC8FOse5EVrxajJtFp4M6FmCd5V" />
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="bg-surface-container-low py-xl px-margin">
-<div class="max-w-7xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-center mb-xl">What Parents Say</h2>
-<div class="grid md:grid-cols-3 gap-gutter">
-<!-- Testimonial 1 -->
-<div class="bg-white p-lg rounded-lg paper-cut-shadow relative">
-<div class="flex text-primary-container mb-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant mb-lg">"The transformation in our son's confidence is amazing. He wakes up every day excited to go to school!"</p>
-<div class="flex items-center gap-sm">
-<div class="w-12 h-12 rounded-full overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Portrait of a smiling young mother in professional attire, warm lighting, blurred background, friendly and authentic expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2mfHJjYENz552HtP2tCo9p7Se_xv2y708Qm2clUFxTrOnzO9XmsAskirwwt_BIHrQvilpAg0Bn5Ph5naX2i6DNVW8wZtRDBJuy7n04OLTWY0zIqVA0XGiJmBj28xgkOp2QxNvLe-EjRbvkuKVPotnjQMQZlNutVEpYb4H9sJtc10GF8co7RsHiQMwGcVcxrAGXyYHv7MfZmk5SE4xk_6vvG3IX_QhFMkEEjBxbBNReuoRPB0OiPvnvMiAp3yv-UISND_vGP5XtyFD"/>
-</div>
-<div>
-<p class="font-bold">Sarah Jenkins</p>
-<p class="text-sm text-on-surface-variant">Mother of Leo (Junior KG)</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="bg-white p-lg rounded-lg paper-cut-shadow relative">
-<div class="flex text-primary-container mb-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant mb-lg">"Excellent staff and very clean premises. I feel safe leaving my daughter here in the daycare."</p>
-<div class="flex items-center gap-sm">
-<div class="w-12 h-12 rounded-full overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Portrait of a happy father holding a toddler, warm evening lighting, outdoors in a park, soft-focus background, vibrant and joyful mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWBhw02uj0b-BtXA9uVULGaZ2YN1eHCLq6ARzhVJA8UukOtJsKZTux6d3gXvcbIDA6Rjc3gHItx0TVHsj1LAoH--ijZoKaZ2AN9vO21nSTNRbQXs3naPXa0PcVl1iaUs4Ze1qHt81AeruI_rA1c46MaFWjVw1rRvCroSAWNYh5vJwj4M1P5FjDc_ZKED-tV3MrLsx9V_EH9ZPyZrj2PC6O8mHDRxYlMxPLniLFZG5M5OhNyDKGkNP-mrykQuoEkLqY_kwGiP2Ojq7F"/>
-</div>
-<div>
-<p class="font-bold">David Chen</p>
-<p class="text-sm text-on-surface-variant">Father of Mia (Playgroup)</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="bg-white p-lg rounded-lg paper-cut-shadow relative">
-<div class="flex text-primary-container mb-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant mb-lg">"The curriculum is very balanced. My child has learned so much about both numbers and sharing."</p>
-<div class="flex items-center gap-sm">
-<div class="w-12 h-12 rounded-full overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Portrait of a friendly middle-aged woman, smiling warmly, natural lighting in a garden, bright and inviting atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6O3uzL8N17T7SUQVG0m2BYmCEVAScWut4quKZkVJ30hN9tXzeQiBlOuPCN4LkWSsIXdPiYHwDpGuQxc8Nj7gG9iNwJtxm6ohPD3nHvaPUk6RMwqZNeg0rI1loHghap31-PHkMTL6EYwmpRlL_u1mvrxMC6KwEoU-j4zh2l1SessyDe_ubQ4y_2j33TgyG1gx7B8ZzomnTktv_bHe8ic0AVXWE_vY1vuOWi9nK3GJh6kTyWLE91w352vea8ek71fWFDltzllq81JH7"/>
-</div>
-<div>
-<p class="font-bold">Anita Gupta</p>
-<p class="text-sm text-on-surface-variant">Mother of Kabir (Senior KG)</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="max-w-7xl mx-auto">
+        <h2 class="font-headline-lg text-headline-lg text-center mb-xl">What Parents Say</h2>
+        <div class="grid md:grid-cols-3 gap-gutter">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-lg rounded-lg paper-cut-shadow relative">
+                <div class="flex text-primary-container mb-sm">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="italic text-on-surface-variant mb-lg">"The transformation in our son's confidence is amazing.
+                    He wakes up every day excited to go to school!"</p>
+                <div class="flex items-center gap-sm">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Portrait of a smiling young mother in professional attire, warm lighting, blurred background, friendly and authentic expression."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2mfHJjYENz552HtP2tCo9p7Se_xv2y708Qm2clUFxTrOnzO9XmsAskirwwt_BIHrQvilpAg0Bn5Ph5naX2i6DNVW8wZtRDBJuy7n04OLTWY0zIqVA0XGiJmBj28xgkOp2QxNvLe-EjRbvkuKVPotnjQMQZlNutVEpYb4H9sJtc10GF8co7RsHiQMwGcVcxrAGXyYHv7MfZmk5SE4xk_6vvG3IX_QhFMkEEjBxbBNReuoRPB0OiPvnvMiAp3yv-UISND_vGP5XtyFD" />
+                    </div>
+                    <div>
+                        <p class="font-bold">Sarah Jenkins</p>
+                        <p class="text-sm text-on-surface-variant">Mother of Leo (Junior KG)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-lg rounded-lg paper-cut-shadow relative">
+                <div class="flex text-primary-container mb-sm">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="italic text-on-surface-variant mb-lg">"Excellent staff and very clean premises. I feel safe
+                    leaving my daughter here in the daycare."</p>
+                <div class="flex items-center gap-sm">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Portrait of a happy father holding a toddler, warm evening lighting, outdoors in a park, soft-focus background, vibrant and joyful mood."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWBhw02uj0b-BtXA9uVULGaZ2YN1eHCLq6ARzhVJA8UukOtJsKZTux6d3gXvcbIDA6Rjc3gHItx0TVHsj1LAoH--ijZoKaZ2AN9vO21nSTNRbQXs3naPXa0PcVl1iaUs4Ze1qHt81AeruI_rA1c46MaFWjVw1rRvCroSAWNYh5vJwj4M1P5FjDc_ZKED-tV3MrLsx9V_EH9ZPyZrj2PC6O8mHDRxYlMxPLniLFZG5M5OhNyDKGkNP-mrykQuoEkLqY_kwGiP2Ojq7F" />
+                    </div>
+                    <div>
+                        <p class="font-bold">David Chen</p>
+                        <p class="text-sm text-on-surface-variant">Father of Mia (Playgroup)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-lg rounded-lg paper-cut-shadow relative">
+                <div class="flex text-primary-container mb-sm">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="italic text-on-surface-variant mb-lg">"The curriculum is very balanced. My child has learned
+                    so much about both numbers and sharing."</p>
+                <div class="flex items-center gap-sm">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Portrait of a friendly middle-aged woman, smiling warmly, natural lighting in a garden, bright and inviting atmosphere."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6O3uzL8N17T7SUQVG0m2BYmCEVAScWut4quKZkVJ30hN9tXzeQiBlOuPCN4LkWSsIXdPiYHwDpGuQxc8Nj7gG9iNwJtxm6ohPD3nHvaPUk6RMwqZNeg0rI1loHghap31-PHkMTL6EYwmpRlL_u1mvrxMC6KwEoU-j4zh2l1SessyDe_ubQ4y_2j33TgyG1gx7B8ZzomnTktv_bHe8ic0AVXWE_vY1vuOWi9nK3GJh6kTyWLE91w352vea8ek71fWFDltzllq81JH7" />
+                    </div>
+                    <div>
+                        <p class="font-bold">Anita Gupta</p>
+                        <p class="text-sm text-on-surface-variant">Mother of Kabir (Senior KG)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="py-xl px-margin max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
-<div>
-<h2 class="font-headline-lg text-headline-lg">Moments of Joy</h2>
-<p class="text-on-surface-variant">Glimpses into our daily school life</p>
-</div>
-<div class="flex gap-sm overflow-x-auto pb-2">
-<button data-gallery-filter="all" class="gallery-tab-btn active bg-primary text-white border-2 border-primary px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200 shadow-sm">All</button>
-<button data-gallery-filter="classroom" class="gallery-tab-btn bg-surface-container-highest text-on-surface-variant hover:bg-primary/10 border-2 border-transparent px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200">Classroom</button>
-<button data-gallery-filter="playground" class="gallery-tab-btn bg-surface-container-highest text-on-surface-variant hover:bg-primary/10 border-2 border-transparent px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200">Playground</button>
-<button data-gallery-filter="events" class="gallery-tab-btn bg-surface-container-highest text-on-surface-variant hover:bg-primary/10 border-2 border-transparent px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200">Events</button>
-</div>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
-<div data-gallery-category="playground" class="gallery-item rounded-lg overflow-hidden h-64 hover:scale-105 transition-all duration-300">
-<img class="w-full h-full object-cover" data-alt="A group of kids in red uniforms playing with colorful hula hoops on a green lawn. Bright sunny day, energetic motion, joyful atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwBVNC8KEnsmL5U4ggnRWlt1-9RkZotW2CO835AehJ9pW_MZfg67iD7LdwjjAQ1a5kUH-jxtsuwYkuR0L5RsqqCpQy5GikzilfjbSJ0-0LqXEzhfK5c_pTSY4v8V4tOqQdbOynQ0eRzEz7-Cpw2-_DWB-8xPh2AyBzGIBqh7MQi2ax0IRRJRB42zHPLxm6cgnP-J0IA7KJDKwMQLIKlOjo1PKW0RAKHka6ueoDkXpiDeNCy_riUdlVSh2IEcX90QJ8KKfEwuIHnOkt"/>
-</div>
-<div data-gallery-category="classroom" class="gallery-item rounded-lg overflow-hidden h-80 row-span-2 hover:scale-105 transition-all duration-300">
-<img class="w-full h-full object-cover" data-alt="Preschool children sitting in a circle during story time, listening intently to their teacher holding a large colorful picture book. Warm interior lighting, cozy classroom vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5uiV0u4PsYZohGUQ6PHPv224M0CJFHhYo0yZju0mCxgih5Qh0qMI5u1YexndTTH6UvO2KijdajZVqIXjpXtck7sllzJG9KxJOaJw1yjXiw3zHo62wJxl8jqeq75wLq1AlfBNWnqz0PvvecYqU0XFSalyLEsCUcT9Kd7ISNuGLUHTWWH08-RKXh50mi0Sz9dTVSQlNYJ724s0Ul-E5pxdqE0x90sFa6BTWC6j7csqcXI-pBVQp4j5AolmS7ofiJ9_N4Hfzo5CTw0e-"/>
-</div>
-<div data-gallery-category="classroom" class="gallery-item rounded-lg overflow-hidden h-48 hover:scale-105 transition-all duration-300">
-<img class="w-full h-full object-cover" data-alt="Detailed shot of colorful children's art projects hanging on a string with wooden clips in a classroom. Vibrant colors, creative and crafty aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa6iG2XPAUiI_-LOUju4StD-n2yLe_E1PbVa7RfRA_OedjcywGns1PDLm5hF422_9vYEhi_fxbRe6NoI8qSV-evWrdbMgGCZ7OlUfXwjL2SMtIrwKpZG3AzROS37nL_aorn81_c_ehxAgH2kUtyWqGlXDiF45yxkPWi-Hwipf8Wl-qOMksrGIl9Wy3duANjk6mHaMkoJkjjY3Q-9wUuGrNhCgYvnIPu8KzacfmS23mg05yBeQn-6yrwSh5qb7iACBl7J6WXdGVhyw9"/>
-</div>
-<div data-gallery-category="playground" class="gallery-item rounded-lg overflow-hidden h-64 hover:scale-105 transition-all duration-300">
-<img class="w-full h-full object-cover" data-alt="Children playing with sensory sand tables, concentrated expressions, pastel-colored toys, high-key bright lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlZMhymBvY99HRod1BvketbnGHLEs-ffTSYkOhJRrYcQDkZhoPNTpqqqdeNZ4r_AwcE8RDoIqGN4CJ8ZnbrdV8oCQLeMY1M2Uj5RlwvvoZ5X3joOXzj8uROzLYC_uhz6llDCmjBdjLRIC4UvDSTjelJpQZXQNgladbNoWaoiXgau7oV-vBBnWKMv9Z0cGqs8nS7J2Mlu3uvaz8xB8R5ERmDkPiKh_h6eWWAsBYh46dCxYOm05sWFPtCaqXPUK6E86e_hN6VTEfmJsg"/>
-</div>
-<div data-gallery-category="classroom" class="gallery-item rounded-lg overflow-hidden h-64 hover:scale-105 transition-all duration-300 md:-mt-16">
-<img class="w-full h-full object-cover" data-alt="A child in a lab coat and goggles doing a simple science experiment with colored liquids in beakers. Educational and fun, bright lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMel-5DoiXJB8jJbzu5Xr0pzUHENlEYkUnlrUC2nfiWJy88P_8kkUI2s313JRIs7OgljYgXASLGxg6P0-4tXmBYT9G0nbbw-rrhSEZGhk6JUdI6h73DRr3QfjielPrDV8J6gBnjGgeOp4vGZSiQwXC0JnYcGYo1uLDeNOomUKViv-IP-_ho6PpGOno9ulEnKscpcqgmzKrRG3Hxb90wkonWTMVXwvKBNScESaRR3QgBhAk3LpbrUD3GIBdhEz87gFN3zM9KlLgPoE1"/>
-</div>
-<div data-gallery-category="events" class="gallery-item rounded-lg overflow-hidden h-48 hover:scale-105 transition-all duration-300">
-<img class="w-full h-full object-cover" data-alt="Kids having a healthy snack time together at a small table, eating fruits, smiling and talking. Natural soft light, communal feeling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRKfTuFgxwhLy4SviSh656T2M4X2niyHnOwovA97Jk-2ZxlV3QszUfQ6WP2JAiwDghRpMSqdUnIHY11Uh_hOodcCaAOgnyzwm10v-Tnt5qnrISJSxTSaEd6MqABdA9S7oWGNtRVfDS8coULfaIxeNre1sa5zcBmHMlYAIl0rVkqlj3S18DUWGBjwXfxUJDrgYR7-p9xc4lPfaOyoLZjdDDIW-wiWiV7jorpo069BFb7HVDTb7fNaHsmPk_49rA-o3qJCZoUenL8DME"/>
-</div>
-</div>
+    <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+        <div>
+            <h2 class="font-headline-lg text-headline-lg">Moments of Joy</h2>
+            <p class="text-on-surface-variant">Glimpses into our daily school life</p>
+        </div>
+        <div class="flex gap-sm overflow-x-auto pb-2">
+            <button data-gallery-filter="all"
+                class="gallery-tab-btn active bg-primary text-white border-2 border-primary px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200 shadow-sm">All</button>
+            <button data-gallery-filter="classroom"
+                class="gallery-tab-btn bg-surface-container-highest text-on-surface-variant hover:bg-primary/10 border-2 border-transparent px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200">Classroom</button>
+            <button data-gallery-filter="playground"
+                class="gallery-tab-btn bg-surface-container-highest text-on-surface-variant hover:bg-primary/10 border-2 border-transparent px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200">Playground</button>
+            <button data-gallery-filter="events"
+                class="gallery-tab-btn bg-surface-container-highest text-on-surface-variant hover:bg-primary/10 border-2 border-transparent px-md py-xs rounded-full font-bold shrink-0 transition-all duration-200">Events</button>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+        <div data-gallery-category="playground"
+            class="gallery-item rounded-lg overflow-hidden h-64 hover:scale-105 transition-all duration-300">
+            <img class="w-full h-full object-cover"
+                data-alt="A group of kids in red uniforms playing with colorful hula hoops on a green lawn. Bright sunny day, energetic motion, joyful atmosphere."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwBVNC8KEnsmL5U4ggnRWlt1-9RkZotW2CO835AehJ9pW_MZfg67iD7LdwjjAQ1a5kUH-jxtsuwYkuR0L5RsqqCpQy5GikzilfjbSJ0-0LqXEzhfK5c_pTSY4v8V4tOqQdbOynQ0eRzEz7-Cpw2-_DWB-8xPh2AyBzGIBqh7MQi2ax0IRRJRB42zHPLxm6cgnP-J0IA7KJDKwMQLIKlOjo1PKW0RAKHka6ueoDkXpiDeNCy_riUdlVSh2IEcX90QJ8KKfEwuIHnOkt" />
+        </div>
+        <div data-gallery-category="classroom"
+            class="gallery-item rounded-lg overflow-hidden h-80 row-span-2 hover:scale-105 transition-all duration-300">
+            <img class="w-full h-full object-cover"
+                data-alt="Preschool children sitting in a circle during story time, listening intently to their teacher holding a large colorful picture book. Warm interior lighting, cozy classroom vibe."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5uiV0u4PsYZohGUQ6PHPv224M0CJFHhYo0yZju0mCxgih5Qh0qMI5u1YexndTTH6UvO2KijdajZVqIXjpXtck7sllzJG9KxJOaJw1yjXiw3zHo62wJxl8jqeq75wLq1AlfBNWnqz0PvvecYqU0XFSalyLEsCUcT9Kd7ISNuGLUHTWWH08-RKXh50mi0Sz9dTVSQlNYJ724s0Ul-E5pxdqE0x90sFa6BTWC6j7csqcXI-pBVQp4j5AolmS7ofiJ9_N4Hfzo5CTw0e-" />
+        </div>
+        <div data-gallery-category="classroom"
+            class="gallery-item rounded-lg overflow-hidden h-48 hover:scale-105 transition-all duration-300">
+            <img class="w-full h-full object-cover"
+                data-alt="Detailed shot of colorful children's art projects hanging on a string with wooden clips in a classroom. Vibrant colors, creative and crafty aesthetic."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa6iG2XPAUiI_-LOUju4StD-n2yLe_E1PbVa7RfRA_OedjcywGns1PDLm5hF422_9vYEhi_fxbRe6NoI8qSV-evWrdbMgGCZ7OlUfXwjL2SMtIrwKpZG3AzROS37nL_aorn81_c_ehxAgH2kUtyWqGlXDiF45yxkPWi-Hwipf8Wl-qOMksrGIl9Wy3duANjk6mHaMkoJkjjY3Q-9wUuGrNhCgYvnIPu8KzacfmS23mg05yBeQn-6yrwSh5qb7iACBl7J6WXdGVhyw9" />
+        </div>
+        <div data-gallery-category="playground"
+            class="gallery-item rounded-lg overflow-hidden h-64 hover:scale-105 transition-all duration-300">
+            <img class="w-full h-full object-cover"
+                data-alt="Children playing with sensory sand tables, concentrated expressions, pastel-colored toys, high-key bright lighting."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlZMhymBvY99HRod1BvketbnGHLEs-ffTSYkOhJRrYcQDkZhoPNTpqqqdeNZ4r_AwcE8RDoIqGN4CJ8ZnbrdV8oCQLeMY1M2Uj5RlwvvoZ5X3joOXzj8uROzLYC_uhz6llDCmjBdjLRIC4UvDSTjelJpQZXQNgladbNoWaoiXgau7oV-vBBnWKMv9Z0cGqs8nS7J2Mlu3uvaz8xB8R5ERmDkPiKh_h6eWWAsBYh46dCxYOm05sWFPtCaqXPUK6E86e_hN6VTEfmJsg" />
+        </div>
+        <div data-gallery-category="classroom"
+            class="gallery-item rounded-lg overflow-hidden h-64 hover:scale-105 transition-all duration-300 md:-mt-16">
+            <img class="w-full h-full object-cover"
+                data-alt="A child in a lab coat and goggles doing a simple science experiment with colored liquids in beakers. Educational and fun, bright lighting."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMel-5DoiXJB8jJbzu5Xr0pzUHENlEYkUnlrUC2nfiWJy88P_8kkUI2s313JRIs7OgljYgXASLGxg6P0-4tXmBYT9G0nbbw-rrhSEZGhk6JUdI6h73DRr3QfjielPrDV8J6gBnjGgeOp4vGZSiQwXC0JnYcGYo1uLDeNOomUKViv-IP-_ho6PpGOno9ulEnKscpcqgmzKrRG3Hxb90wkonWTMVXwvKBNScESaRR3QgBhAk3LpbrUD3GIBdhEz87gFN3zM9KlLgPoE1" />
+        </div>
+        <div data-gallery-category="events"
+            class="gallery-item rounded-lg overflow-hidden h-48 hover:scale-105 transition-all duration-300">
+            <img class="w-full h-full object-cover"
+                data-alt="Kids having a healthy snack time together at a small table, eating fruits, smiling and talking. Natural soft light, communal feeling."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRKfTuFgxwhLy4SviSh656T2M4X2niyHnOwovA97Jk-2ZxlV3QszUfQ6WP2JAiwDghRpMSqdUnIHY11Uh_hOodcCaAOgnyzwm10v-Tnt5qnrISJSxTSaEd6MqABdA9S7oWGNtRVfDS8coULfaIxeNre1sa5zcBmHMlYAIl0rVkqlj3S18DUWGBjwXfxUJDrgYR7-p9xc4lPfaOyoLZjdDDIW-wiWiV7jorpo069BFb7HVDTb7fNaHsmPk_49rA-o3qJCZoUenL8DME" />
+        </div>
+    </div>
 </section>
 <section class="bg-surface-container-high py-xl px-margin">
-<div class="max-w-3xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-center mb-xl">Common Questions</h2>
-<div class="space-y-md">
-<div class="bg-white rounded-lg p-md paper-cut-shadow cursor-pointer">
-<div class="flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-<span class="font-bold">What are the school timings?</span>
-<span class="material-symbols-outlined text-primary">add_circle</span>
-</div>
-<div class="hidden pt-md text-on-surface-variant">Our preschool programs run from 9:00 AM to 1:00 PM. Daycare facilities are available until 6:30 PM.</div>
-</div>
-<div class="bg-white rounded-lg p-md paper-cut-shadow cursor-pointer">
-<div class="flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-<span class="font-bold">Do you provide transport facilities?</span>
-<span class="material-symbols-outlined text-primary">add_circle</span>
-</div>
-<div class="hidden pt-md text-on-surface-variant">Yes, we have a fleet of GPS-enabled buses with female attendants for safe commuting.</div>
-</div>
-<div class="bg-white rounded-lg p-md paper-cut-shadow cursor-pointer">
-<div class="flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-<span class="font-bold">What is the teacher-student ratio?</span>
-<span class="material-symbols-outlined text-primary">add_circle</span>
-</div>
-<div class="hidden pt-md text-on-surface-variant">We maintain a strict 1:10 ratio for Nursery and 1:8 for Playgroup to ensure individual attention.</div>
-</div>
-</div>
-</div>
+    <div class="max-w-3xl mx-auto">
+        <h2 class="font-headline-lg text-headline-lg text-center mb-xl">Common Questions</h2>
+        <div class="space-y-md">
+            <div class="bg-white rounded-lg p-md paper-cut-shadow cursor-pointer">
+                <div class="flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <span class="font-bold">What are the school timings?</span>
+                    <span class="material-symbols-outlined text-primary">add_circle</span>
+                </div>
+                <div class="hidden pt-md text-on-surface-variant">Our preschool programs run from 9:00 AM to 1:00 PM.
+                    Daycare facilities are available until 6:30 PM.</div>
+            </div>
+            <div class="bg-white rounded-lg p-md paper-cut-shadow cursor-pointer">
+                <div class="flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <span class="font-bold">Do you provide transport facilities?</span>
+                    <span class="material-symbols-outlined text-primary">add_circle</span>
+                </div>
+                <div class="hidden pt-md text-on-surface-variant">Yes, we have a fleet of GPS-enabled buses with female
+                    attendants for safe commuting.</div>
+            </div>
+            <div class="bg-white rounded-lg p-md paper-cut-shadow cursor-pointer">
+                <div class="flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <span class="font-bold">What is the teacher-student ratio?</span>
+                    <span class="material-symbols-outlined text-primary">add_circle</span>
+                </div>
+                <div class="hidden pt-md text-on-surface-variant">We maintain a strict 1:10 ratio for Nursery and 1:8
+                    for Playgroup to ensure individual attention.</div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="py-xl px-margin max-w-7xl mx-auto">
-<div class="bg-white rounded-xl overflow-hidden paper-cut-shadow flex flex-col md:flex-row">
-<div class="p-xl md:w-3/5">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Admissions Open 2024-25</h2>
-<p class="mb-lg">Fill out the form below and our admissions counselor will get in touch with you shortly.</p>
-<form class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<div>
-<label class="block text-sm font-bold mb-xs">Parent's Name</label>
-<input class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm" placeholder="John Doe" type="text"/>
-</div>
-<div>
-<label class="block text-sm font-bold mb-xs">Child's Name</label>
-<input class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm" placeholder="Junior Doe" type="text"/>
-</div>
-<div>
-<label class="block text-sm font-bold mb-xs">Phone Number</label>
-<input class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm" placeholder="+1 234 567 890" type="tel"/>
-</div>
-<div>
-<label class="block text-sm font-bold mb-xs">Program Interested</label>
-<select class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm">
-<option>Select Program</option>
-<option>Playgroup</option>
-<option>Nursery</option>
-<option>Junior KG</option>
-<option>Senior KG</option>
-</select>
-</div>
-<div class="md:col-span-2">
-<button class="w-full bg-primary-container text-on-primary-container font-bold py-md rounded-full btn-pushable text-headline-sm" type="submit">Submit Application</button>
-</div>
-</form>
-</div>
-<div class="md:w-2/5 bg-secondary-fixed flex items-center justify-center p-xl">
-<div class="text-center">
-<img alt="School Mascot" class="w-48 h-48 mx-auto mb-md animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9GGHTmVby8y6zagZoAtQuOkxg_FWV4r85caGkLxrqXiXy6oat-Dv-o56sqG5pM4YT3vDSZrsZvPNDgoft8pdAoeanDiohUNt30s30oL51JF5d02BJVpjuBjnHKQftJvTRsVoMP9E0pKBf3V0EXXmlBXA8WVL3KbPb-DFYJ3N_4TN0O8pvC2WepacCHmdvpc0ENQBzkAr_uo2xxesqyF4UOj0be-zqE7162b1M4K5QN18zOlw_GT92O1XQ_i3dJqqy4Zj6V0M3bWy"/>
-<p class="font-headline-sm text-on-secondary-fixed-variant">Join our family of happy learners!</p>
-</div>
-</div>
-</div>
+    <div class="bg-white rounded-xl overflow-hidden paper-cut-shadow flex flex-col md:flex-row">
+        <div class="p-xl md:w-3/5">
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-md">Admissions Open 2024-25</h2>
+            <p class="mb-lg">Fill out the form below and our admissions counselor will get in touch with you shortly.
+            </p>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                <div>
+                    <label class="block text-sm font-bold mb-xs">Parent's Name</label>
+                    <input
+                        class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm"
+                        placeholder="John Doe" type="text" />
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-xs">Child's Name</label>
+                    <input
+                        class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm"
+                        placeholder="Junior Doe" type="text" />
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-xs">Phone Number</label>
+                    <input
+                        class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm"
+                        placeholder="+1 234 567 890" type="tel" />
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-xs">Program Interested</label>
+                    <select
+                        class="w-full rounded-lg border-2 border-outline-variant focus:border-secondary focus:ring-0 px-md py-sm">
+                        <option>Select Program</option>
+                        <option>Playgroup</option>
+                        <option>Nursery</option>
+                        <option>Junior KG</option>
+                        <option>Senior KG</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <button
+                        class="w-full bg-primary-container text-on-primary-container font-bold py-md rounded-full btn-pushable text-headline-sm"
+                        type="submit">Submit Application</button>
+                </div>
+            </form>
+        </div>
+        <div class="md:w-2/5 bg-secondary-fixed flex items-center justify-center p-xl">
+            <div class="text-center">
+                <img alt="School Mascot" class="w-48 h-48 mx-auto mb-md animate-float"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9GGHTmVby8y6zagZoAtQuOkxg_FWV4r85caGkLxrqXiXy6oat-Dv-o56sqG5pM4YT3vDSZrsZvPNDgoft8pdAoeanDiohUNt30s30oL51JF5d02BJVpjuBjnHKQftJvTRsVoMP9E0pKBf3V0EXXmlBXA8WVL3KbPb-DFYJ3N_4TN0O8pvC2WepacCHmdvpc0ENQBzkAr_uo2xxesqyF4UOj0be-zqE7162b1M4K5QN18zOlw_GT92O1XQ_i3dJqqy4Zj6V0M3bWy" />
+                <p class="font-headline-sm text-on-secondary-fixed-variant">Join our family of happy learners!</p>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}

@@ -4,127 +4,155 @@
 
 {% block content %}
 <main class="flex-grow flex flex-col gap-xl">
-<!-- Banner Header -->
-<header class="relative w-full h-[400px] md:h-[500px] bg-primary-fixed overflow-hidden flex items-center justify-center wavy-bg">
-<div class="absolute inset-0 z-0">
-<!-- Using a placeholder pattern as wavy-bg handles the main vibe, but adding some texture if needed -->
-<div class="w-full h-full opacity-20" data-alt="A playful, seamless repeating pattern of soft white clouds and small yellow stars on a sky blue background. The style is modern, vector-based, and very child-friendly with rounded edges. High-key lighting, bright and cheerful mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY62AWsJaFJicN1dz4fta8kQgFboxCB-M2JR_qrd7EVVcPNcFHlnPP-V0MEPsH8W9uYd4LATWbzYOxSNfIGZceafTJSuysLzjUazsRi28tFuM5GRU4d7NaeUWZOm4k0lH9mcK_wEXcqbTVxD0qri96wZNoBFnO3VgiSBveF8Q3A0WIi9DORD_A81CgdoxiCllPkWOtS95UBQFsuilnLiLgwcT6S1dDfH9av3l0KsUCGzjqeDpheSuL0qsCtHMU-ITycwAu-4f6S28Q')"></div>
-</div>
-<div class="relative z-10 flex flex-col md:flex-row items-center gap-lg max-w-container-max w-full px-md">
-<div class="text-center md:text-left flex-1">
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary-container mb-sm">Get in Touch</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">We'd love to hear from you! Whether you have questions about our programs or just want to say hello, drop us a line.</p>
-</div>
-<div class="flex-1 flex justify-center md:justify-end">
-<img alt="Polar bear mascot holding a phone" class="w-48 md:w-64 h-auto drop-shadow-xl animate-bounce" src="https://lh3.googleusercontent.com/aida/AP1WRLvtHVSktyoqoYDgP-F8HjL6-zxzU00GXXrAOq1Jbb1FLIz3NkWfc9WQgxWKUc6WP6uf6aN0AU3cwLXjCUBfdxIfDu5BEmAv1D9eNy8XoVvQ2StoMCk7X1r_xOG9uhdxWwWg_cLDAemU5PcWoB8CF03yrT0WxMf5qFAI1qR6QTLYZqNJwgE2jkaEdxNkhVchNkCkCflI8A82cIBVIgzC0Fevh0TNUzYspglfygBa3tjd90aZh5U2PdFk0Sbr" style="animation-duration: 3s;"/>
-</div>
-</div>
-</header>
-<!-- Quick Contact Strip -->
-<section class="max-w-container-max w-full mx-auto px-md -mt-16 z-20 relative">
-<div class="flex flex-wrap justify-center gap-md">
-<div class="bg-surface rounded-full shadow-soft p-sm flex items-center gap-sm border-2 border-primary-container pr-md bouncy-hover transition-all duration-300">
-<div class="bg-primary-container text-on-primary w-12 h-12 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-[24px]">call</span>
-</div>
-<span class="font-label-bold text-label-bold text-primary">+1 234 567 890</span>
-</div>
-<div class="bg-surface rounded-full shadow-soft p-sm flex items-center gap-sm border-2 border-secondary-container pr-md bouncy-hover transition-all duration-300">
-<div class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-[24px]">chat</span>
-</div>
-<span class="font-label-bold text-label-bold text-on-secondary-container">WhatsApp Us</span>
-</div>
-<div class="bg-surface rounded-full shadow-soft p-sm flex items-center gap-sm border-2 border-tertiary-container pr-md bouncy-hover transition-all duration-300">
-<div class="bg-tertiary-container text-on-tertiary w-12 h-12 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-[24px]">mail</span>
-</div>
-<span class="font-label-bold text-label-bold text-tertiary">hello@apnabrand.com</span>
-</div>
-</div>
-</section>
-<!--  Split -->
-<section class="max-w-container-max w-full mx-auto px-md grid grid-cols-1 md:grid-cols-2 gap-lg pb-xl">
-<!-- Contact Form -->
-<div class="bg-surface shadow-soft rounded-xl p-lg border-2 border-primary-fixed relative overflow-hidden">
-<!-- Decorative element -->
-<div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary-fixed rounded-full opacity-50 blur-2xl"></div>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-lg relative z-10">Send us a Message</h2>
-<form class="flex flex-col gap-md relative z-10">
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm" for="name">Your Name</label>
-<input class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-full px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface" id="name" placeholder="e.g. John Doe" type="text"/>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm" for="phone">Phone Number</label>
-<input class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-full px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface" id="phone" placeholder="(555) 000-0000" type="tel"/>
-</div>
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm" for="email">Email Address</label>
-<input class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-full px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface" id="email" placeholder="hello@example.com" type="email"/>
-</div>
-</div>
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm" for="message">Message</label>
-<textarea class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-xl px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface resize-none" id="message" placeholder="How can we help you?" rows="4"></textarea>
-</div>
-<button class="mt-sm bg-secondary-container text-on-secondary-container font-label-bold text-label-bold py-md px-lg rounded-full border-b-4 border-secondary-fixed-dim hover:bg-secondary-fixed hover:border-secondary transition-all duration-200 active:translate-y-1 active:border-b-0 self-start text-lg" type="submit">
-                        Submit Message
-                    </button>
-</form>
-</div>
-<!-- Map & Locator -->
-<div class="flex flex-col gap-lg">
-<!-- Map Card -->
-<div class="bg-surface shadow-soft rounded-xl border-2 border-tertiary-fixed h-64 md:h-auto md:flex-grow relative overflow-hidden group">
-<img class="w-full h-full object-cover" data-alt="A stylized, colorful map illustration of a city neighborhood, specifically designed for a modern UI. The map features soft rounded roads, vibrant green parks, and light blue waterways. There is a prominent, oversized, 3D-style location pin in bright red. The overall aesthetic is clean, playful, and bright." data-location="New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADRAkTRK0uk8l0ReXrL28OEWIEuzG9e5rz61iidjJniAc7X0iLRFVGMFDfm0qdPs000uLiXtYUIZh6iole4G1HUHKWQMWrpv6BzW1S7iIbiycXkZ5TSEj_xTsg_pt61-N2vMTJ6KwuznpWH2TrB4FvTX8GfURxMCTIUTKDNc6YvYbBve4wugHpI5SmueodFGZRjO9mIqaBJ-7dBvLmThTdszjRanG6OBsi2ora3agKcMJrXMj9rFQUckl4uZoMyi4O2eum-LLmAY0y"/>
-<!-- Custom Pin Overlay (Simulated) -->
-<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="bg-surface p-sm rounded-full shadow-lg border-2 border-tertiary animate-bounce">
-<img alt="Mascot Pin" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLvtHVSktyoqoYDgP-F8HjL6-zxzU00GXXrAOq1Jbb1FLIz3NkWfc9WQgxWKUc6WP6uf6aN0AU3cwLXjCUBfdxIfDu5BEmAv1D9eNy8XoVvQ2StoMCk7X1r_xOG9uhdxWwWg_cLDAemU5PcWoB8CF03yrT0WxMf5qFAI1qR6QTLYZqNJwgE2jkaEdxNkhVchNkCkCflI8A82cIBVIgzC0Fevh0TNUzYspglfygBa3tjd90aZh5U2PdFk0Sbr"/>
-</div>
-</div>
-</div>
-<!-- Locator Mini-section -->
-<div class="bg-primary-container p-lg rounded-xl shadow-soft">
-<h3 class="font-headline-md text-headline-md text-on-primary-container mb-md flex items-center gap-sm">
-<span class="material-symbols-outlined text-[28px]">location_on</span>
-                        Find a Branch
-                    </h3>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-sm mb-md">
-<select class="w-full bg-surface border-2 border-primary-fixed rounded-full px-md py-sm focus:border-secondary-container focus:ring-0 text-on-surface font-body-md appearance-none">
-<option>Select State</option>
-<option>California</option>
-<option>New York</option>
-</select>
-<select class="w-full bg-surface border-2 border-primary-fixed rounded-full px-md py-sm focus:border-secondary-container focus:ring-0 text-on-surface font-body-md appearance-none">
-<option>Select City</option>
-<option>Los Angeles</option>
-<option>San Francisco</option>
-</select>
-<select class="w-full bg-surface border-2 border-primary-fixed rounded-full px-md py-sm focus:border-secondary-container focus:ring-0 text-on-surface font-body-md appearance-none">
-<option>Select Center</option>
-<option>Downtown Campus</option>
-<option>Westside Branch</option>
-</select>
-</div>
-<button class="w-full bg-surface text-primary font-label-bold text-label-bold py-sm px-md rounded-full border-2 border-primary hover:bg-primary-fixed transition-colors flex items-center justify-center gap-xs">
-<span class="material-symbols-outlined text-[20px]">search</span>
-                        Find Preschool
-                    </button>
-</div>
-</div>
-</section>
-</main>  <div class="fixed bottom-md right-md z-50 flex flex-col gap-sm">
-<button aria-label="Call" class="bg-primary text-on-primary rounded-full p-4 hover:-translate-y-1 transition-transform shadow-lg border-2 border-primary-container flex items-center justify-center">
-<span class="material-symbols-outlined">call</span>
-</button>
-<button aria-label="WhatsApp" class="bg-primary text-on-primary rounded-full p-4 hover:-translate-y-1 transition-transform shadow-lg border-2 border-primary-container flex items-center justify-center">
-<span class="material-symbols-outlined">chat</span>
-</button>
-<button aria-label="Callback" class="bg-secondary text-on-secondary-fixed rounded-full p-4 hover:-translate-y-1 transition-transform shadow-lg border-4 border-secondary-fixed flex items-center justify-center Active: scale-90 duration-150">
-<span class="material-symbols-outlined">phone_callback</span>
-</button>
-</div> Footer 
+    <!-- Banner Header -->
+    <header
+        class="relative w-full h-[400px] md:h-[500px] bg-primary-fixed overflow-hidden flex items-center justify-center wavy-bg">
+        <div class="absolute inset-0 z-0">
+            <!-- Using a placeholder pattern as wavy-bg handles the main vibe, but adding some texture if needed -->
+            <div class="w-full h-full opacity-20"
+                data-alt="A playful, seamless repeating pattern of soft white clouds and small yellow stars on a sky blue background. The style is modern, vector-based, and very child-friendly with rounded edges. High-key lighting, bright and cheerful mood."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY62AWsJaFJicN1dz4fta8kQgFboxCB-M2JR_qrd7EVVcPNcFHlnPP-V0MEPsH8W9uYd4LATWbzYOxSNfIGZceafTJSuysLzjUazsRi28tFuM5GRU4d7NaeUWZOm4k0lH9mcK_wEXcqbTVxD0qri96wZNoBFnO3VgiSBveF8Q3A0WIi9DORD_A81CgdoxiCllPkWOtS95UBQFsuilnLiLgwcT6S1dDfH9av3l0KsUCGzjqeDpheSuL0qsCtHMU-ITycwAu-4f6S28Q')">
+            </div>
+        </div>
+        <div class="relative z-10 flex flex-col md:flex-row items-center gap-lg max-w-container-max w-full px-md">
+            <div class="text-center md:text-left flex-1">
+                <h1
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary-container mb-sm">
+                    Get in Touch</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">We'd love to hear from you!
+                    Whether you have questions about our programs or just want to say hello, drop us a line.</p>
+            </div>
+            <div class="flex-1 flex justify-center md:justify-end">
+                <img alt="Friendly polar bear mascot" class="w-48 md:w-64 h-auto drop-shadow-xl animate-bounce"
+                    src="https://res.cloudinary.com/dvwpuewhv/image/upload/v1788436514/Polar_bear_waving_scarf_2K_202609031625-removebg-preview_zawpgq.png"
+                    style="animation-duration: 3s;" />
+            </div>
+        </div>
+    </header>
+    <!-- Quick Contact Strip -->
+    <section class="max-w-container-max w-full mx-auto px-md -mt-16 z-20 relative">
+        <div class="flex flex-wrap justify-center gap-md">
+            <div
+                class="bg-surface rounded-full shadow-soft p-sm flex items-center gap-sm border-2 border-primary-container pr-md bouncy-hover transition-all duration-300">
+                <div
+                    class="bg-primary-container text-on-primary w-12 h-12 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">call</span>
+                </div>
+                <span class="font-label-bold text-label-bold text-primary">+1 234 567 890</span>
+            </div>
+            <div
+                class="bg-surface rounded-full shadow-soft p-sm flex items-center gap-sm border-2 border-secondary-container pr-md bouncy-hover transition-all duration-300">
+                <div
+                    class="bg-secondary-container text-on-secondary-container w-12 h-12 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">chat</span>
+                </div>
+                <span class="font-label-bold text-label-bold text-on-secondary-container">WhatsApp Us</span>
+            </div>
+            <div
+                class="bg-surface rounded-full shadow-soft p-sm flex items-center gap-sm border-2 border-tertiary-container pr-md bouncy-hover transition-all duration-300">
+                <div
+                    class="bg-tertiary-container text-on-tertiary w-12 h-12 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">mail</span>
+                </div>
+                <span class="font-label-bold text-label-bold text-tertiary">hello@apnabrand.com</span>
+            </div>
+        </div>
+    </section>
+    <!--  Split -->
+    <section class="max-w-container-max w-full mx-auto px-md grid grid-cols-1 md:grid-cols-2 gap-lg pb-xl">
+        <!-- Contact Form -->
+        <div class="bg-surface shadow-soft rounded-xl p-lg border-2 border-primary-fixed relative overflow-hidden">
+            <!-- Decorative element -->
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary-fixed rounded-full opacity-50 blur-2xl"></div>
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-lg relative z-10">Send us a Message</h2>
+            <form class="flex flex-col gap-md relative z-10">
+                <div>
+                    <label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm"
+                        for="name">Your Name</label>
+                    <input
+                        class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-full px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface"
+                        id="name" placeholder="e.g. John Doe" type="text" />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm"
+                            for="phone">Phone Number</label>
+                        <input
+                            class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-full px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface"
+                            id="phone" placeholder="(555) 000-0000" type="tel" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm"
+                            for="email">Email Address</label>
+                        <input
+                            class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-full px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface"
+                            id="email" placeholder="hello@example.com" type="email" />
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-label-bold text-label-bold text-on-surface-variant mb-xs ml-sm"
+                        for="message">Message</label>
+                    <textarea
+                        class="w-full bg-surface-container-low border-2 border-primary-fixed rounded-xl px-md py-sm focus:border-tertiary focus:ring-0 transition-colors font-body-md text-on-surface resize-none"
+                        id="message" placeholder="How can we help you?" rows="4"></textarea>
+                </div>
+                <button
+                    class="mt-sm bg-secondary-container text-on-secondary-container font-label-bold text-label-bold py-md px-lg rounded-full border-b-4 border-secondary-fixed-dim hover:bg-secondary-fixed hover:border-secondary transition-all duration-200 active:translate-y-1 active:border-b-0 self-start text-lg"
+                    type="submit">
+                    Submit Message
+                </button>
+            </form>
+        </div>
+        <!-- Map & Locator -->
+        <div class="flex flex-col gap-lg">
+            <!-- Map Card -->
+            <div
+                class="bg-surface shadow-soft rounded-xl border-2 border-tertiary-fixed h-64 md:h-auto md:flex-grow relative overflow-hidden group">
+                <img class="w-full h-full object-cover"
+                    data-alt="A stylized, colorful map illustration of a city neighborhood, specifically designed for a modern UI. The map features soft rounded roads, vibrant green parks, and light blue waterways. There is a prominent, oversized, 3D-style location pin in bright red. The overall aesthetic is clean, playful, and bright."
+                    data-location="New York City"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuADRAkTRK0uk8l0ReXrL28OEWIEuzG9e5rz61iidjJniAc7X0iLRFVGMFDfm0qdPs000uLiXtYUIZh6iole4G1HUHKWQMWrpv6BzW1S7iIbiycXkZ5TSEj_xTsg_pt61-N2vMTJ6KwuznpWH2TrB4FvTX8GfURxMCTIUTKDNc6YvYbBve4wugHpI5SmueodFGZRjO9mIqaBJ-7dBvLmThTdszjRanG6OBsi2ora3agKcMJrXMj9rFQUckl4uZoMyi4O2eum-LLmAY0y" />
+                <!-- Custom Pin Overlay (Simulated) -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div class="bg-surface p-sm rounded-full shadow-lg border-2 border-tertiary animate-bounce">
+                        <img alt="Friendly polar bear mascot" class="w-10 h-10 object-contain"
+                            src="https://res.cloudinary.com/dvwpuewhv/image/upload/v1788436514/Polar_bear_waving_scarf_2K_202609031625-removebg-preview_zawpgq.png" />
+                    </div>
+                </div>
+            </div>
+            <!-- Locator Mini-section -->
+            <div class="bg-primary-container p-lg rounded-xl shadow-soft">
+                <h3 class="font-headline-md text-headline-md text-on-primary-container mb-md flex items-center gap-sm">
+                    <span class="material-symbols-outlined text-[28px]">location_on</span>
+                    Find a Branch
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-sm mb-md">
+                    <select
+                        class="w-full bg-surface border-2 border-primary-fixed rounded-full px-md py-sm focus:border-secondary-container focus:ring-0 text-on-surface font-body-md appearance-none">
+                        <option>Select State</option>
+                        <option>California</option>
+                        <option>New York</option>
+                    </select>
+                    <select
+                        class="w-full bg-surface border-2 border-primary-fixed rounded-full px-md py-sm focus:border-secondary-container focus:ring-0 text-on-surface font-body-md appearance-none">
+                        <option>Select City</option>
+                        <option>Los Angeles</option>
+                        <option>San Francisco</option>
+                    </select>
+                    <select
+                        class="w-full bg-surface border-2 border-primary-fixed rounded-full px-md py-sm focus:border-secondary-container focus:ring-0 text-on-surface font-body-md appearance-none">
+                        <option>Select Center</option>
+                        <option>Downtown Campus</option>
+                        <option>Westside Branch</option>
+                    </select>
+                </div>
+                <button
+                    class="w-full bg-surface text-primary font-label-bold text-label-bold py-sm px-md rounded-full border-2 border-primary hover:bg-primary-fixed transition-colors flex items-center justify-center gap-xs">
+                    <span class="material-symbols-outlined text-[20px]">search</span>
+                    Find Preschool
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}

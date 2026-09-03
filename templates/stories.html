@@ -4,109 +4,160 @@
 
 {% block content %}
 <main class="w-full">
-<!-- Hero Banner -->
-<section class="relative bg-primary-fixed pt-xl pb-xl px-md md:px-lg flex flex-col items-center justify-center min-h-[40vh] overflow-hidden">
-<div class="z-10 text-center max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-lg">
-<div class="flex-1 text-left">
-<h1 class="font-display-lg-mobile md:font-display-lg text-on-primary-fixed mb-sm">Stories &amp; Parenting Tips</h1>
-<p class="font-body-lg text-on-surface-variant max-w-2xl">Discover joyful moments from our classrooms, expert advice for growing minds, and a community of supportive parents and educators.</p>
-</div>
-<div class="flex-1 flex justify-center">
-<img alt="Polar Bear Mascot" class="w-48 h-48 md:w-64 md:h-64 object-contain animate-bounce" data-alt="Polar bear mascot logo for 'Apna Brand Name' preschool, cute, smiling, waving, Grass Green scarf, playful vector style, child-friendly." src="https://lh3.googleusercontent.com/aida/AP1WRLvtHVSktyoqoYDgP-F8HjL6-zxzU00GXXrAOq1Jbb1FLIz3NkWfc9WQgxWKUc6WP6uf6aN0AU3cwLXjCUBfdxIfDu5BEmAv1D9eNy8XoVvQ2StoMCk7X1r_xOG9uhdxWwWg_cLDAemU5PcWoB8CF03yrT0WxMf5qFAI1qR6QTLYZqNJwgE2jkaEdxNkhVchNkCkCflI8A82cIBVIgzC0Fevh0TNUzYspglfygBa3tjd90aZh5U2PdFk0Sbr" style="animation-duration: 3s;"/>
-</div>
-</div>
-<div class="wave-bottom">
-<svg data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-<path class="shape-fill" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-</svg>
-</div>
-</section>
-<div class="max-w-container-max mx-auto px-md md:px-lg py-xl">
-<!-- Featured Post -->
-<section class="mb-xl">
-<div class="bg-surface-container-lowest rounded-xl border-2 border-tertiary shadow-[0_10px_30px_rgba(30,42,56,0.08)] overflow-hidden flex flex-col md:flex-row items-center card-hover-effect">
-<div class="md:w-1/2 w-full h-64 md:h-[400px]">
-<img alt="Parent and child reading" class="w-full h-full object-cover" data-alt="A warm, highly detailed digital illustration of a parent and a preschool-aged child reading a colorful storybook together in a cozy, sunlit room. The illustration features vibrant but soft colors, fitting a modern light-mode kindergarten aesthetic. Generous natural light spills across the scene, highlighting their joyful expressions. Smooth, rounded shapes and a sense of safety and structured play pervade the artwork." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdHXdMc6hTLw10LzFVcLCxYak1G_WUuLy_Rc6kclVI0QDIIegckDNjd6mAHQvw5oUTc7m2Rk0La28ht4OO_aK99APgiz-hhiKUqleHcE4AQxoYPEqJ2BybP5FpYTeh3oIUSUwpqz3LZm-e4zBJtPYGEux5nUvLZv9J4DYmKITmASZQEQOKY6VYlSTA31tW6EAwEJTaTBMOX5-gI6NiSquviKWkyKqEEgYNAG8BxIG7Sj_6w3NEIBVFGblcwKlFNMzWb2vkafb-t3Rf"/>
-</div>
-<div class="md:w-1/2 w-full p-lg flex flex-col justify-center">
-<span class="inline-block bg-secondary-container text-on-secondary-container font-label-bold px-sm py-xs rounded-full w-max mb-sm border-2 border-surface-container-lowest">Featured Story</span>
-<h2 class="font-headline-md text-on-surface mb-sm">Building Resilience in Preschoolers</h2>
-<p class="font-body-md text-on-surface-variant mb-md">Learn how to foster emotional strength and adaptability in young children through guided play, positive reinforcement, and consistent routines in both the classroom and at home.</p>
-<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold uppercase tracking-wider px-md py-sm rounded-lg border-b-4 border-[#d4a017] hover:-translate-y-1 hover:shadow-lg transition-all active:translate-y-0 active:border-b-0 w-max">
-                            Read More
+    <!-- Hero Banner -->
+    <section
+        class="relative bg-primary-fixed pt-xl pb-xl px-md md:px-lg flex flex-col items-center justify-center min-h-[40vh] overflow-hidden">
+        <div class="z-10 text-center max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-lg">
+            <div class="flex-1 text-left">
+                <h1 class="font-display-lg-mobile md:font-display-lg text-on-primary-fixed mb-sm">Stories &amp;
+                    Parenting Tips</h1>
+                <p class="font-body-lg text-on-surface-variant max-w-2xl">Discover joyful moments from our classrooms,
+                    expert advice for growing minds, and a community of supportive parents and educators.</p>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <img alt="Friendly polar bear mascot" class="w-48 h-48 md:w-64 md:h-64 object-contain animate-bounce"
+                    src="https://res.cloudinary.com/dvwpuewhv/image/upload/v1788436514/Polar_bear_waving_scarf_2K_202609031625-removebg-preview_zawpgq.png"
+                    style="animation-duration: 3s;" />
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="shape-fill"
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+    <div class="max-w-container-max mx-auto px-md md:px-lg py-xl">
+        <!-- Featured Post -->
+        <section class="mb-xl">
+            <div
+                class="bg-surface-container-lowest rounded-xl border-2 border-tertiary shadow-[0_10px_30px_rgba(30,42,56,0.08)] overflow-hidden flex flex-col md:flex-row items-center card-hover-effect">
+                <div class="md:w-1/2 w-full h-64 md:h-[400px]">
+                    <img alt="Parent and child reading" class="w-full h-full object-cover"
+                        data-alt="A warm, highly detailed digital illustration of a parent and a preschool-aged child reading a colorful storybook together in a cozy, sunlit room. The illustration features vibrant but soft colors, fitting a modern light-mode kindergarten aesthetic. Generous natural light spills across the scene, highlighting their joyful expressions. Smooth, rounded shapes and a sense of safety and structured play pervade the artwork."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdHXdMc6hTLw10LzFVcLCxYak1G_WUuLy_Rc6kclVI0QDIIegckDNjd6mAHQvw5oUTc7m2Rk0La28ht4OO_aK99APgiz-hhiKUqleHcE4AQxoYPEqJ2BybP5FpYTeh3oIUSUwpqz3LZm-e4zBJtPYGEux5nUvLZv9J4DYmKITmASZQEQOKY6VYlSTA31tW6EAwEJTaTBMOX5-gI6NiSquviKWkyKqEEgYNAG8BxIG7Sj_6w3NEIBVFGblcwKlFNMzWb2vkafb-t3Rf" />
+                </div>
+                <div class="md:w-1/2 w-full p-lg flex flex-col justify-center">
+                    <span
+                        class="inline-block bg-secondary-container text-on-secondary-container font-label-bold px-sm py-xs rounded-full w-max mb-sm border-2 border-surface-container-lowest">Featured
+                        Story</span>
+                    <h2 class="font-headline-md text-on-surface mb-sm">Building Resilience in Preschoolers</h2>
+                    <p class="font-body-md text-on-surface-variant mb-md">Learn how to foster emotional strength and
+                        adaptability in young children through guided play, positive reinforcement, and consistent
+                        routines in both the classroom and at home.</p>
+                    <button
+                        class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold uppercase tracking-wider px-md py-sm rounded-lg border-b-4 border-[#d4a017] hover:-translate-y-1 hover:shadow-lg transition-all active:translate-y-0 active:border-b-0 w-max">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Category Filter -->
+        <section class="mb-lg flex flex-wrap gap-sm justify-center md:justify-start">
+            <button
+                class="bg-secondary-container text-on-secondary-container font-label-bold px-md py-sm rounded-full border-2 border-surface-container-lowest shadow-sm hover:shadow-md transition-all">All
+                Stories</button>
+            <button
+                class="bg-surface-container text-on-surface-variant font-label-bold px-md py-sm rounded-full border-2 border-transparent hover:bg-surface-variant transition-all">Parenting
+                Tips</button>
+            <button
+                class="bg-surface-container text-on-surface-variant font-label-bold px-md py-sm rounded-full border-2 border-transparent hover:bg-surface-variant transition-all">School
+                Events</button>
+            <button
+                class="bg-surface-container text-on-surface-variant font-label-bold px-md py-sm rounded-full border-2 border-transparent hover:bg-surface-variant transition-all">Success
+                Stories</button>
+        </section>
+        <!--  Layout -->
+        <div class="flex flex-col lg:flex-row gap-lg">
+            <!-- Blog Grid -->
+            <div class="lg:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                    <!-- Card 1 -->
+                    <article
+                        class="bg-surface-container-lowest rounded-lg border-2 border-primary shadow-sm hover:shadow-lg p-md flex flex-col card-hover-effect">
+                        <div class="relative w-full h-48 mb-sm rounded-md overflow-hidden">
+                            <img alt="Kids playing blocks" class="w-full h-full object-cover"
+                                data-alt="A bright, cheerful photo of two young children building a tall tower out of colorful wooden blocks on a soft play mat. The classroom environment is tidy, safe, and flooded with natural light. The aesthetic is clean and modern, emphasizing structured play and creative energy suitable for a premium preschool website."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGLBaQHeGoqDfyumCUwUmA0pH5uG_en_BSVZdKtaFSsyVPblOUwrpPpgj8hRRtM-wMKMEeyCk22j1W1Gcnu7fNeZt76NNHr_m7Mr5A3yXPMeLsPLo-v_lTRxPdjww4ubK2M--luG0BVtZqJjmcxWSHdAv_GURSBOjgAsfCERs5YkS0dNi5N_cuzZ43vUNm_YGYBU64ziasVzqpigDXHq4hT4qWCtQnpRDYJ-fdToZu3BtVzs0PxFFXKxoxoiEdYQzD-doQkAccSCZ1" />
+                            <span
+                                class="absolute top-sm right-sm bg-primary-container text-on-primary-container font-label-bold text-[12px] px-sm py-xs rounded-full">Tips</span>
+                        </div>
+                        <h3 class="font-headline-md text-on-surface text-[20px] mb-xs leading-tight">The Power of Block
+                            Play</h3>
+                        <p class="font-body-md text-on-surface-variant text-[14px] line-clamp-2 mb-sm flex-grow">
+                            Discover how simple wooden blocks develop spatial awareness and teamwork skills in early
+                            childhood.</p>
+                        <a class="text-primary font-label-bold flex items-center gap-xs hover:text-primary-container transition-colors w-max mt-auto"
+                            href="#">
+                            Read More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </article>
+                    <!-- Card 2 -->
+                    <article
+                        class="bg-surface-container-lowest rounded-lg border-2 border-[#4CAF50] shadow-sm hover:shadow-lg p-md flex flex-col card-hover-effect">
+                        <div class="relative w-full h-48 mb-sm rounded-md overflow-hidden">
+                            <img alt="Spring Festival" class="w-full h-full object-cover"
+                                data-alt="A vibrant, wide-angle shot of a lively spring festival at a kindergarten. Children and teachers are engaged in outdoor activities under a clear blue sky, surrounded by green trees and colorful bunting. The mood is highly energetic, joyful, and safe, capturing the essence of a premium educational community event in a light-mode aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF_-Nmz9X3YZPVuvIqX4uY_EJs11IJWU6JnU5DcUL_m2x-pTDkML9MQ8RoU4zEWEY0uB4OWFxIGj0WlALRRuR6hznEaHel2ZgiBmSNdclwmRIJl8CyxfFxutQGSKEtDaO7cOkymPyoR4j8Zg-OI5Eouf6CT3DlMKAO4-3ODjQxa8H9p1f6cpvu3h9YlsF6nCY3Xf7k1X2VslyvzZqm_u8YD5-V1eXpYwIWTFunhYc0zfo0k-z4huKjj1ynrj4tGeuONC59Q_L0Wo3z" />
+                            <span
+                                class="absolute top-sm right-sm bg-[#E8F5E9] text-[#2E7D32] font-label-bold text-[12px] px-sm py-xs rounded-full border border-[#4CAF50]">Events</span>
+                        </div>
+                        <h3 class="font-headline-md text-on-surface text-[20px] mb-xs leading-tight">Annual Spring
+                            Festival Highlights</h3>
+                        <p class="font-body-md text-on-surface-variant text-[14px] line-clamp-2 mb-sm flex-grow">A look
+                            back at the joyful moments, games, and performances from our beautiful Spring gathering.</p>
+                        <a class="text-primary font-label-bold flex items-center gap-xs hover:text-primary-container transition-colors w-max mt-auto"
+                            href="#">
+                            Read More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3 flex flex-col gap-lg">
+                <!-- Popular Posts -->
+                <div class="bg-surface-container-lowest rounded-lg border-2 border-surface-variant p-md shadow-sm">
+                    <h3
+                        class="font-headline-md text-on-surface mb-md pb-xs border-b-2 border-surface-variant flex items-center gap-sm">
+                        <span class="material-symbols-outlined text-tertiary">trending_up</span> Popular
+                    </h3>
+                    <div class="flex flex-col gap-sm">
+                        <a class="flex gap-sm group" href="#">
+                            <img alt="Healthy snacks"
+                                class="w-16 h-16 rounded-md object-cover border border-outline-variant"
+                                data-alt="A close-up, appetizing shot of healthy, creatively arranged kindergarten snacks on a clean pastel plate. Features sliced fruits shaped like animals and colorful vegetable sticks. Bright, even lighting, modern aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbCcZdNN2A_EgDEzZeDIHtTu_0C1MCXDJUq2juL6OcezLFR-oT6EEePjbXKzRy5_dEtECIjOg9Y47odAH43bL0h7pFq3La5G9xOJRystemn_ZD02BkFJNIxY9POgU4nnGLqdm4phqU4yU_r2NO_1CGKEQN0eYt4NIh8XuUObC78WlCSejJdYS5SepXouDkBGwuu9ydAV89k8ZFc4kzTrLS2qQY5Qe1ZtdTDk-LE9orqg4BR2NTB6X71hLgHnabO8ma09guem6LzEPX" />
+                            <div>
+                                <h4
+                                    class="font-label-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                                    Creative &amp; Healthy Lunchbox Ideas</h4>
+                                <span class="text-[12px] text-on-surface-variant">5 min read</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="bg-tertiary-container rounded-lg p-md text-center shadow-md relative overflow-hidden">
+                    <div class="absolute -top-4 -right-4 w-16 h-16 bg-surface-container-lowest rounded-full opacity-20">
+                    </div>
+                    <h3 class="font-headline-md text-on-tertiary-container mb-xs relative z-10">Stay Updated!</h3>
+                    <p class="font-body-md text-on-tertiary-container text-[14px] mb-md relative z-10">Get the latest
+                        stories and tips in your inbox.</p>
+                    <form class="relative z-10 flex flex-col gap-sm">
+                        <input
+                            class="w-full rounded-full border-2 border-surface-container-lowest bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-0 px-sm py-xs text-[14px]"
+                            placeholder="Parent's Email" type="email" />
+                        <button
+                            class="w-full bg-secondary-container text-on-secondary-container font-label-bold px-md py-sm rounded-full border-b-4 border-[#d4a017] hover:translate-y-[2px] hover:border-b-2 transition-all active:translate-y-[4px] active:border-b-0"
+                            type="button">
+                            Subscribe
                         </button>
-</div>
-</div>
-</section>
-<!-- Category Filter -->
-<section class="mb-lg flex flex-wrap gap-sm justify-center md:justify-start">
-<button class="bg-secondary-container text-on-secondary-container font-label-bold px-md py-sm rounded-full border-2 border-surface-container-lowest shadow-sm hover:shadow-md transition-all">All Stories</button>
-<button class="bg-surface-container text-on-surface-variant font-label-bold px-md py-sm rounded-full border-2 border-transparent hover:bg-surface-variant transition-all">Parenting Tips</button>
-<button class="bg-surface-container text-on-surface-variant font-label-bold px-md py-sm rounded-full border-2 border-transparent hover:bg-surface-variant transition-all">School Events</button>
-<button class="bg-surface-container text-on-surface-variant font-label-bold px-md py-sm rounded-full border-2 border-transparent hover:bg-surface-variant transition-all">Success Stories</button>
-</section>
-<!--  Layout -->
-<div class="flex flex-col lg:flex-row gap-lg">
-<!-- Blog Grid -->
-<div class="lg:w-2/3">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<!-- Card 1 -->
-<article class="bg-surface-container-lowest rounded-lg border-2 border-primary shadow-sm hover:shadow-lg p-md flex flex-col card-hover-effect">
-<div class="relative w-full h-48 mb-sm rounded-md overflow-hidden">
-<img alt="Kids playing blocks" class="w-full h-full object-cover" data-alt="A bright, cheerful photo of two young children building a tall tower out of colorful wooden blocks on a soft play mat. The classroom environment is tidy, safe, and flooded with natural light. The aesthetic is clean and modern, emphasizing structured play and creative energy suitable for a premium preschool website." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGLBaQHeGoqDfyumCUwUmA0pH5uG_en_BSVZdKtaFSsyVPblOUwrpPpgj8hRRtM-wMKMEeyCk22j1W1Gcnu7fNeZt76NNHr_m7Mr5A3yXPMeLsPLo-v_lTRxPdjww4ubK2M--luG0BVtZqJjmcxWSHdAv_GURSBOjgAsfCERs5YkS0dNi5N_cuzZ43vUNm_YGYBU64ziasVzqpigDXHq4hT4qWCtQnpRDYJ-fdToZu3BtVzs0PxFFXKxoxoiEdYQzD-doQkAccSCZ1"/>
-<span class="absolute top-sm right-sm bg-primary-container text-on-primary-container font-label-bold text-[12px] px-sm py-xs rounded-full">Tips</span>
-</div>
-<h3 class="font-headline-md text-on-surface text-[20px] mb-xs leading-tight">The Power of Block Play</h3>
-<p class="font-body-md text-on-surface-variant text-[14px] line-clamp-2 mb-sm flex-grow">Discover how simple wooden blocks develop spatial awareness and teamwork skills in early childhood.</p>
-<a class="text-primary font-label-bold flex items-center gap-xs hover:text-primary-container transition-colors w-max mt-auto" href="#">
-                                Read More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</article>
-<!-- Card 2 -->
-<article class="bg-surface-container-lowest rounded-lg border-2 border-[#4CAF50] shadow-sm hover:shadow-lg p-md flex flex-col card-hover-effect">
-<div class="relative w-full h-48 mb-sm rounded-md overflow-hidden">
-<img alt="Spring Festival" class="w-full h-full object-cover" data-alt="A vibrant, wide-angle shot of a lively spring festival at a kindergarten. Children and teachers are engaged in outdoor activities under a clear blue sky, surrounded by green trees and colorful bunting. The mood is highly energetic, joyful, and safe, capturing the essence of a premium educational community event in a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF_-Nmz9X3YZPVuvIqX4uY_EJs11IJWU6JnU5DcUL_m2x-pTDkML9MQ8RoU4zEWEY0uB4OWFxIGj0WlALRRuR6hznEaHel2ZgiBmSNdclwmRIJl8CyxfFxutQGSKEtDaO7cOkymPyoR4j8Zg-OI5Eouf6CT3DlMKAO4-3ODjQxa8H9p1f6cpvu3h9YlsF6nCY3Xf7k1X2VslyvzZqm_u8YD5-V1eXpYwIWTFunhYc0zfo0k-z4huKjj1ynrj4tGeuONC59Q_L0Wo3z"/>
-<span class="absolute top-sm right-sm bg-[#E8F5E9] text-[#2E7D32] font-label-bold text-[12px] px-sm py-xs rounded-full border border-[#4CAF50]">Events</span>
-</div>
-<h3 class="font-headline-md text-on-surface text-[20px] mb-xs leading-tight">Annual Spring Festival Highlights</h3>
-<p class="font-body-md text-on-surface-variant text-[14px] line-clamp-2 mb-sm flex-grow">A look back at the joyful moments, games, and performances from our beautiful Spring gathering.</p>
-<a class="text-primary font-label-bold flex items-center gap-xs hover:text-primary-container transition-colors w-max mt-auto" href="#">
-                                Read More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</article>
-</div>
-</div>
-<!-- Sidebar -->
-<aside class="lg:w-1/3 flex flex-col gap-lg">
-<!-- Popular Posts -->
-<div class="bg-surface-container-lowest rounded-lg border-2 border-surface-variant p-md shadow-sm">
-<h3 class="font-headline-md text-on-surface mb-md pb-xs border-b-2 border-surface-variant flex items-center gap-sm">
-<span class="material-symbols-outlined text-tertiary">trending_up</span> Popular
-                        </h3>
-<div class="flex flex-col gap-sm">
-<a class="flex gap-sm group" href="#">
-<img alt="Healthy snacks" class="w-16 h-16 rounded-md object-cover border border-outline-variant" data-alt="A close-up, appetizing shot of healthy, creatively arranged kindergarten snacks on a clean pastel plate. Features sliced fruits shaped like animals and colorful vegetable sticks. Bright, even lighting, modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbCcZdNN2A_EgDEzZeDIHtTu_0C1MCXDJUq2juL6OcezLFR-oT6EEePjbXKzRy5_dEtECIjOg9Y47odAH43bL0h7pFq3La5G9xOJRystemn_ZD02BkFJNIxY9POgU4nnGLqdm4phqU4yU_r2NO_1CGKEQN0eYt4NIh8XuUObC78WlCSejJdYS5SepXouDkBGwuu9ydAV89k8ZFc4kzTrLS2qQY5Qe1ZtdTDk-LE9orqg4BR2NTB6X71hLgHnabO8ma09guem6LzEPX"/>
-<div>
-<h4 class="font-label-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">Creative &amp; Healthy Lunchbox Ideas</h4>
-<span class="text-[12px] text-on-surface-variant">5 min read</span>
-</div>
-</a>
-</div>
-</div>
-<!-- Newsletter -->
-<div class="bg-tertiary-container rounded-lg p-md text-center shadow-md relative overflow-hidden">
-<div class="absolute -top-4 -right-4 w-16 h-16 bg-surface-container-lowest rounded-full opacity-20"></div>
-<h3 class="font-headline-md text-on-tertiary-container mb-xs relative z-10">Stay Updated!</h3>
-<p class="font-body-md text-on-tertiary-container text-[14px] mb-md relative z-10">Get the latest stories and tips in your inbox.</p>
-<form class="relative z-10 flex flex-col gap-sm">
-<input class="w-full rounded-full border-2 border-surface-container-lowest bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-0 px-sm py-xs text-[14px]" placeholder="Parent's Email" type="email"/>
-<button class="w-full bg-secondary-container text-on-secondary-container font-label-bold px-md py-sm rounded-full border-b-4 border-[#d4a017] hover:translate-y-[2px] hover:border-b-2 transition-all active:translate-y-[4px] active:border-b-0" type="button">
-                                Subscribe
-                            </button>
-</form>
-</div>
-</aside>
-</div>
-</div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
 </main>
 {% endblock %}

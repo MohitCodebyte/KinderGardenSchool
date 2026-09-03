@@ -4,248 +4,328 @@
 
 {% block content %}
 <main class="flex-grow flex flex-col">
-<!-- Hero Banner -->
-<section class="relative bg-primary-container pt-xl pb-24 px-md md:px-lg flex flex-col items-center justify-center text-center overflow-hidden">
-<!-- Decorative floating icons -->
-<div class="absolute top-10 left-10 text-on-primary opacity-50 hidden md:block">
-<span class="material-symbols-outlined text-[64px]" style="font-variation-settings: 'FILL' 1;">camera_alt</span>
-</div>
-<div class="absolute bottom-20 right-10 text-on-primary opacity-50 hidden md:block">
-<span class="material-symbols-outlined text-[80px]" style="font-variation-settings: 'FILL' 1;">movie</span>
-</div>
-<div class="absolute top-20 right-1/4 text-secondary opacity-60 hidden md:block">
-<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<img alt="Polar bear mascot logo" class="w-32 h-32 md:w-48 md:h-48 object-contain mb-sm z-10 animate-bounce" src="https://lh3.googleusercontent.com/aida/AP1WRLvtHVSktyoqoYDgP-F8HjL6-zxzU00GXXrAOq1Jbb1FLIz3NkWfc9WQgxWKUc6WP6uf6aN0AU3cwLXjCUBfdxIfDu5BEmAv1D9eNy8XoVvQ2StoMCk7X1r_xOG9uhdxWwWg_cLDAemU5PcWoB8CF03yrT0WxMf5qFAI1qR6QTLYZqNJwgE2jkaEdxNkhVchNkCkCflI8A82cIBVIgzC0Fevh0TNUzYspglfygBa3tjd90aZh5U2PdFk0Sbr" style="animation-duration: 3s;"/>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary font-extrabold max-w-2xl z-10 relative">
-                Our Moments &amp; Milestones
-            </h1>
-<p class="font-body-lg text-body-lg text-on-primary mt-sm max-w-xl z-10 opacity-90">
-                Catch a glimpse of the joy, learning, and exciting events happening every day at Apna Brand Name.
-            </p>
-<div class="wave-bottom">
-<svg data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-<path class="shape-fill" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C52.16,93.87,100.68,80.12,149.36,68.9,206.12,55.8,263.84,67.31,321.39,56.44Z"></path>
-</svg>
-</div>
-</section>
-<div class="max-w-container-max mx-auto w-full px-md md:px-gutter py-xl flex-grow">
-<!-- Tab Navigation -->
-<div class="flex justify-center mb-xl">
-<div class="bg-surface-container-high rounded-full p-2 inline-flex flex-wrap gap-2 justify-center hide-scroll max-w-full overflow-x-auto border-2 border-outline-variant shadow-inner">
-<button class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold whitespace-nowrap transition-all duration-300 bg-primary text-on-primary shadow-md transform scale-105" data-target="press-releases">
-                        Press Releases
+    <!-- Hero Banner -->
+    <section
+        class="relative bg-primary-container pt-xl pb-24 px-md md:px-lg flex flex-col items-center justify-center text-center overflow-hidden">
+        <!-- Decorative floating icons -->
+        <div class="absolute top-10 left-10 text-on-primary opacity-50 hidden md:block">
+            <span class="material-symbols-outlined text-[64px]"
+                style="font-variation-settings: 'FILL' 1;">camera_alt</span>
+        </div>
+        <div class="absolute bottom-20 right-10 text-on-primary opacity-50 hidden md:block">
+            <span class="material-symbols-outlined text-[80px]" style="font-variation-settings: 'FILL' 1;">movie</span>
+        </div>
+        <div class="absolute top-20 right-1/4 text-secondary opacity-60 hidden md:block">
+            <span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <img alt="Friendly polar bear mascot" class="w-32 h-32 md:w-48 md:h-48 object-contain mb-sm z-10 animate-bounce"
+            src="https://res.cloudinary.com/dvwpuewhv/image/upload/v1788436514/Polar_bear_waving_scarf_2K_202609031625-removebg-preview_zawpgq.png"
+            style="animation-duration: 3s;" />
+        <h1
+            class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary font-extrabold max-w-2xl z-10 relative">
+            Our Moments &amp; Milestones
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-primary mt-sm max-w-xl z-10 opacity-90">
+            Catch a glimpse of the joy, learning, and exciting events happening every day at Apna Brand Name.
+        </p>
+        <div class="wave-bottom">
+            <svg data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="shape-fill"
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C52.16,93.87,100.68,80.12,149.36,68.9,206.12,55.8,263.84,67.31,321.39,56.44Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+    <div class="max-w-container-max mx-auto w-full px-md md:px-gutter py-xl flex-grow">
+        <!-- Tab Navigation -->
+        <div class="flex justify-center mb-xl">
+            <div
+                class="bg-surface-container-high rounded-full p-2 inline-flex flex-wrap gap-2 justify-center hide-scroll max-w-full overflow-x-auto border-2 border-outline-variant shadow-inner">
+                <button
+                    class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold whitespace-nowrap transition-all duration-300 bg-primary text-on-primary shadow-md transform scale-105"
+                    data-target="press-releases">
+                    Press Releases
+                </button>
+                <button
+                    class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold text-on-surface-variant whitespace-nowrap transition-all duration-300 hover:bg-surface-variant hover:text-on-surface"
+                    data-target="awards-gallery">
+                    Awards Gallery
+                </button>
+                <button
+                    class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold text-on-surface-variant whitespace-nowrap transition-all duration-300 hover:bg-surface-variant hover:text-on-surface"
+                    data-target="photo-gallery">
+                    Photo Gallery
+                </button>
+                <button
+                    class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold text-on-surface-variant whitespace-nowrap transition-all duration-300 hover:bg-surface-variant hover:text-on-surface"
+                    data-target="video-gallery">
+                    Video Gallery
+                </button>
+            </div>
+        </div>
+        <!-- Content Area -->
+        <!-- Press Releases Tab -->
+        <div class="tab-content active space-y-md" id="press-releases">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                <!-- Press Card 1 -->
+                <div
+                    class="bg-surface-container-lowest rounded-DEFAULT border-2 border-primary-fixed-dim soft-shadow p-md flex flex-col h-full bouncy-hover group">
+                    <div class="flex justify-between items-start mb-sm">
+                        <img alt="Publication Logo" class="h-10 w-auto object-contain rounded-sm"
+                            data-alt="A small, stylized logo for a fictional educational magazine, designed in a playful, colorful modern aesthetic on a white background, highly detailed vector style."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ZGx4zoEQC6ChD4ol64gHMaU6IUcVcaMhWfL3u7o-tKgJvpYRx0qa3TwM4nIMYqIrDQk505jaraAKrPm6inzN9R3fC9Q8IzDmI6Xtv6Kmkqj8S9PMcjP1h72_5oI3IcAYbvCX-iPKsHC8i7EHkONw5FcCf7Y0hg7tU-YBUHCQu95_-DYXlxvZ4k_JrkFmfPlBlOSpHpzuax6PXhVA9jvzO-bVRX4w31Cc4BSzvUy6htrxD1VAc156EdbF7kSaR5-3Q0j5MZxLj1BY" />
+                        <span
+                            class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label-bold text-xs uppercase tracking-wide">Oct
+                            24, 2024</span>
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-primary-container mb-xs group-hover:text-primary transition-colors">
+                        Apna Brand Name Wins 'Best Early Education Initiative'</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Recognized globally for
+                        its innovative approach to structured play and holistic child development.</p>
+                    <button
+                        class="self-start text-primary font-label-bold text-label-bold flex items-center gap-1 hover:text-secondary-container transition-colors group-hover:underline">
+                        Read More
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </button>
-<button class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold text-on-surface-variant whitespace-nowrap transition-all duration-300 hover:bg-surface-variant hover:text-on-surface" data-target="awards-gallery">
-                        Awards Gallery
+                </div>
+                <!-- Press Card 2 -->
+                <div
+                    class="bg-surface-container-lowest rounded-DEFAULT border-2 border-secondary-fixed-dim soft-shadow p-md flex flex-col h-full bouncy-hover group">
+                    <div class="flex justify-between items-start mb-sm">
+                        <img alt="Publication Logo" class="h-10 w-auto object-contain rounded-sm"
+                            data-alt="A crisp, vibrant logo for a prominent local newspaper, featuring a modern sans-serif typeface and a small playful sun icon, clear and high contrast."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EZioMxdGsIVTW9cHEd-1WVAirNsIW6BrYdA5ZUQEsPKxgLDsc1fWMO1abF_kZBAS5XG2k8JoESfVgwgbo2VvOWIk7aHsEQkLbSwu9rym9NJqPpTwqTXrXSJMT-kjLt742UF5lnY0O7tZoRzBwe8aeLyC9u192nOwYOnA12GXaq9r6a1XAJ2yygErABRshcKIyPQvDkiJvFea-4Ht8Qtjs9UiMrrQ5xCF-rJoMWgmv59BxdJKJ1A5r6sP6fjfgJXBqpdt6_LdQAS5" />
+                        <span
+                            class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-bold text-xs uppercase tracking-wide">Sep
+                            12, 2024</span>
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-primary-container mb-xs group-hover:text-primary transition-colors">
+                        New 'Nature Play' Curriculum Launched</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">A groundbreaking
+                        curriculum bringing outdoor exploration into the core of early childhood learning.</p>
+                    <button
+                        class="self-start text-primary font-label-bold text-label-bold flex items-center gap-1 hover:text-secondary-container transition-colors group-hover:underline">
+                        Read More
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </button>
-<button class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold text-on-surface-variant whitespace-nowrap transition-all duration-300 hover:bg-surface-variant hover:text-on-surface" data-target="photo-gallery">
-                        Photo Gallery
-                    </button>
-<button class="tab-btn px-6 py-3 rounded-full font-label-bold text-label-bold text-on-surface-variant whitespace-nowrap transition-all duration-300 hover:bg-surface-variant hover:text-on-surface" data-target="video-gallery">
-                        Video Gallery
-                    </button>
-</div>
-</div>
-<!-- Content Area -->
-<!-- Press Releases Tab -->
-<div class="tab-content active space-y-md" id="press-releases">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<!-- Press Card 1 -->
-<div class="bg-surface-container-lowest rounded-DEFAULT border-2 border-primary-fixed-dim soft-shadow p-md flex flex-col h-full bouncy-hover group">
-<div class="flex justify-between items-start mb-sm">
-<img alt="Publication Logo" class="h-10 w-auto object-contain rounded-sm" data-alt="A small, stylized logo for a fictional educational magazine, designed in a playful, colorful modern aesthetic on a white background, highly detailed vector style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ZGx4zoEQC6ChD4ol64gHMaU6IUcVcaMhWfL3u7o-tKgJvpYRx0qa3TwM4nIMYqIrDQk505jaraAKrPm6inzN9R3fC9Q8IzDmI6Xtv6Kmkqj8S9PMcjP1h72_5oI3IcAYbvCX-iPKsHC8i7EHkONw5FcCf7Y0hg7tU-YBUHCQu95_-DYXlxvZ4k_JrkFmfPlBlOSpHpzuax6PXhVA9jvzO-bVRX4w31Cc4BSzvUy6htrxD1VAc156EdbF7kSaR5-3Q0j5MZxLj1BY"/>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label-bold text-xs uppercase tracking-wide">Oct 24, 2024</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-primary-container mb-xs group-hover:text-primary transition-colors">Apna Brand Name Wins 'Best Early Education Initiative'</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Recognized globally for its innovative approach to structured play and holistic child development.</p>
-<button class="self-start text-primary font-label-bold text-label-bold flex items-center gap-1 hover:text-secondary-container transition-colors group-hover:underline">
-                            Read More
-                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-<!-- Press Card 2 -->
-<div class="bg-surface-container-lowest rounded-DEFAULT border-2 border-secondary-fixed-dim soft-shadow p-md flex flex-col h-full bouncy-hover group">
-<div class="flex justify-between items-start mb-sm">
-<img alt="Publication Logo" class="h-10 w-auto object-contain rounded-sm" data-alt="A crisp, vibrant logo for a prominent local newspaper, featuring a modern sans-serif typeface and a small playful sun icon, clear and high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EZioMxdGsIVTW9cHEd-1WVAirNsIW6BrYdA5ZUQEsPKxgLDsc1fWMO1abF_kZBAS5XG2k8JoESfVgwgbo2VvOWIk7aHsEQkLbSwu9rym9NJqPpTwqTXrXSJMT-kjLt742UF5lnY0O7tZoRzBwe8aeLyC9u192nOwYOnA12GXaq9r6a1XAJ2yygErABRshcKIyPQvDkiJvFea-4Ht8Qtjs9UiMrrQ5xCF-rJoMWgmv59BxdJKJ1A5r6sP6fjfgJXBqpdt6_LdQAS5"/>
-<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-bold text-xs uppercase tracking-wide">Sep 12, 2024</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-primary-container mb-xs group-hover:text-primary transition-colors">New 'Nature Play' Curriculum Launched</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">A groundbreaking curriculum bringing outdoor exploration into the core of early childhood learning.</p>
-<button class="self-start text-primary font-label-bold text-label-bold flex items-center gap-1 hover:text-secondary-container transition-colors group-hover:underline">
-                            Read More
-                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Awards Gallery Tab -->
-<div class="tab-content" id="awards-gallery">
-<div class="columns-1 md:columns-2 lg:columns-3 gap-md space-y-md">
-<!-- Award Item -->
-<div class="break-inside-avoid bg-surface-container-lowest p-2 rounded-lg border-4 border-secondary-container shadow-md bouncy-hover relative overflow-hidden group">
-<div class="aspect-[4/3] rounded-DEFAULT overflow-hidden relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A brightly lit, high-quality photograph of a golden trophy shaped like a star, sitting on a wooden desk in a colorful preschool classroom, shallow depth of field, warm inviting lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmNGaZdvFJh_tVPrJAJrzALiHr_TzEcyCsidt2EPUY3z3FtsWC4Sa0ul-t28oZjBrfay17-YkgQXTfKRIDO1jECfSWCdskpYHD8jH7-P1kSdo7nHUTBoTgXHEWFhG8SpDCr_SgVBydQrj8pDaYSEJCaTtcxrAn5-hs35mSQbT_BAKOgPJXktXkHfFSuK3TKb9NeLogcXITPjICyR0dZCoy73rDsuZl9GZoSY4aKmZHVQ0ngiiH-sOzcsX4vX3FHEge5NXnFNtOG_-d')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-sm">
-<span class="text-on-primary font-label-bold text-label-bold">Excellence in Care 2023</span>
-</div>
-</div>
-</div>
-<!-- Award Item -->
-<div class="break-inside-avoid bg-surface-container-lowest p-2 rounded-lg border-4 border-tertiary-container shadow-md bouncy-hover relative overflow-hidden group">
-<div class="aspect-square rounded-DEFAULT overflow-hidden relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A detailed, premium-looking certificate of achievement in a colourful wooden frame, hanging on a bright blue classroom wall, modern typography, playful borders, photorealistic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_Ksasa6eZh9HpGwjzFcl2Hj-ffX0KmHjbv-AvD2Y8Y3Yok32TdaYJpX4c-TpNvPjhVGiN_rTdXyfwIzzGDV9ju_B8eJXGUJOVVnrto9alP-D8CLIL-SLHTJzbaOK44eP2g4uogfIvVRqnPDBs9TIKsyiP87-aN-XV79xZzoXFC6eFdXgrS1KcckrGNIvA4sjwXOyVwUYEjqdhifDhl6KIEnGJSyAZwnoiIEnyka_6at8k9H-75aQs7x4qy4KtTHGKEaJz3ZliML7S')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-sm">
-<span class="text-on-primary font-label-bold text-label-bold">Top 10 Preschools - City Guide</span>
-</div>
-</div>
-</div>
-<!-- Award Item -->
-<div class="break-inside-avoid bg-surface-container-lowest p-2 rounded-lg border-4 border-primary-container shadow-md bouncy-hover relative overflow-hidden group">
-<div class="aspect-[3/4] rounded-DEFAULT overflow-hidden relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A photograph of the school's principal smiling warmly while holding a glass plaque award, surrounded by happy children in a bright, modern, well-lit kindergarten environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCBv1Cd45raPxdoQqP-92Yoi1dzlljL8JxsxJ6jEVyV0UKymFWrtVNjNkapp4S1mX-evWtw94LqmCVZK6aZMDOSGQsgvB7CuBenIb8hyjs2MefskcYnX0TJrvXP3IHJgoC3L8zRksImFrnVUgu1fDanbGoPbBGu49axBKsgzDSUB4nD8hMqY5JwT-bFXjYqLHxndAkM5vb7tSse_y3O1VOO6qBdnVIGC-n30lCkWOrF2Brr8FhVBtt0RlaD7nDTBke3Q-QCHBQZR0r')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-sm">
-<span class="text-on-primary font-label-bold text-label-bold">Best Principal Award</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Photo Gallery Tab -->
-<div class="tab-content" id="photo-gallery">
-<!-- Filter Bar -->
-<div class="flex flex-wrap gap-2 justify-center mb-md">
-<button class="px-4 py-2 rounded-full font-label-bold text-sm bg-tertiary-fixed text-on-tertiary-fixed border-2 border-tertiary-fixed-dim shadow-sm hover:-translate-y-1 transition-transform">All</button>
-<button class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Play Group</button>
-<button class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Nursery</button>
-<button class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Junior KG</button>
-<button class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Senior KG</button>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-sm">
-<!-- Photo 1 -->
-<div class="aspect-square rounded-DEFAULT border-4 border-primary-fixed-dim overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A group of diverse toddlers sitting in a circle on a colorful rug in a bright, modern preschool classroom, engaged in a storytelling session with a smiling teacher, soft natural light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVHJhPtz2IIkPZhcivy13QRRxtq1O7K4SfxkQcvpduWLriZcmYSY1fcMLpE72bZTd3AhhxOyRf0sRqJ5cbfl6AV6C8Z8lNx1i7xQIfcVJn0CXgOEAPrxeVctq1-P7d163Ey1NzCN31KrHGX6SnhSG40u5dzGJYx1UWxZJUqn1YNwIXJht_zEEygIfcVOsEqn_QCZLWhvpfRyMP5-xz-aKVejl_iWccWoF_EznNzr0coG-TQxeLg7N2D9RsIzdUwtwtd-v7yiaQfQkg')"></div>
-<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
-</div>
-</div>
-<!-- Photo 2 -->
-<div class="aspect-square rounded-DEFAULT border-4 border-secondary-fixed overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A close-up of a child's hands covered in bright non-toxic finger paints, creating abstract art on a large piece of paper in a vibrant, messy-play kindergarten setting, high resolution." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiRT65JAULd2glVHS2c6HRg1x4qzOeQgOCYR9dyCmwXbQSUJOjsmggfi3PPeqcTms4wSim1erwbDzUugVn3hZiKw6ijMIPsVHDGbSrNXbZb7Vno5NbX60KKVJueauSNUCgLE02AMum25yS6yetTvvv4q_M-ynSyiuULdeSaHlIsEVn8CCVEI2JtGHigC-nwE-kdUFu4fgGqzmsFFhIA7e-Eq7-j7f-VK9cFbSmVQVld_Z8xsnRPARh6psugJedNcy7Olt6bE5Zqs2b')"></div>
-<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
-</div>
-</div>
-<!-- Photo 3 -->
-<div class="aspect-square rounded-DEFAULT border-4 border-tertiary-fixed-dim overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Children in tiny chef hats and aprons happily decorating cupcakes in a bright, clean, child-friendly kitchen area, soft pastel colors, joyful and energetic mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv3MDHUOYeheWLoEAPMIIdz4emmH2NamKm1CPli2DmwDdVHgm8_BQSgdYI5ls8vBmMHv2Ah7JwRpe1P05F9Tw2xhy7haHlx1bCiU0xPiNPGP0VKkEVqh3SH1xeia3GTD7_yCWpcUChXSNQjVnKMX80sEfbhE5bcz2GsWVRlXF-m7Jd_2-z42v4CrzIbDJ4aQdOhojkCIa3mCK5cyVe9VTLNnCglWu5xYl7qVctWle_tG8Sbc6eJnyV7CO-y7f-GH6cHGhXGknPdSWB')"></div>
-<div class="absolute inset-0 bg-tertiary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
-</div>
-</div>
-<!-- Photo 4 -->
-<div class="aspect-square rounded-DEFAULT border-4 border-primary-fixed overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A wide shot of a colourful outdoor playground filled with active kindergarten children climbing on safe, modern equipment under a clear blue sky, vibrant and dynamic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAk5d6h670FzK8G_xO_tUW-p47VESgaTrIJ5js7iQNMd7KWvKmd4RK6MVvaOKg_ro_KZHcB7J9oAcUDociKV9kkJbSPXMUJ5U2-w-33JVuDqlsVlTy0dN9eSgw6SBl2MKVh7Y46mz8Ouy-F8MR7DP3AB9nDWmbIHCNBJ4pBtbdtrqt88LshEBo1aeRt3bSNspx8hW-J8eKnSmNJhKameHKevRQAf8j8w3yoOG1JNc2oDX4pGjnQqF48Jcy50GAfZY52PKwnO-Qy7CjE')"></div>
-<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Video Gallery Tab -->
-<div class="tab-content" id="video-gallery">
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
-<!-- Video Thumbnail 1 -->
-<div class="group relative rounded-DEFAULT overflow-hidden soft-shadow bouncy-hover cursor-pointer bg-surface-container-lowest border-4 border-secondary-fixed">
-<div class="aspect-video w-full relative">
-<div class="w-full h-full bg-cover bg-center" data-alt="A thumbnail image of a joyful preschool annual day performance, children in cute colorful animal costumes dancing on a bright stage with professional lighting, wide angle." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDY3uUyTO5Q7n_znIHzHH32Fw8Fxb0YjzNoi4O_rwNcia1OYFzAOu1ZYqnLEYnhnOo_KCM9JwJldEys3wP5cf2Ro6SqjJ1hdL-YTJQXz5V66r9HLMryyKiTY8eT8VKz5n9NtfMRb1zhPoJymg8Up6eZEmdHtmcWvG2UhkqEEa866TdxKvuO4TZJeAodidhqqk4QuexNU7Hq9wqLbcUVTP97aUPTWJU5nX2deI2Hy4loDTu3s9B5Jyq6ckKnL5tx0KApWhzWuC-nFvWB')"></div>
-<!-- Overlay -->
-<div class="absolute inset-0 bg-on-background/30 group-hover:bg-on-background/50 transition-colors flex items-center justify-center backdrop-blur-[1px]">
-<div class="bg-on-primary/90 rounded-full p-3 shadow-lg transform group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-[48px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
-</div>
-</div>
-<div class="p-sm bg-surface-container-lowest">
-<h4 class="font-label-bold text-label-bold text-on-primary-container truncate">Annual Day Highlights 2023</h4>
-</div>
-</div>
-<!-- Video Thumbnail 2 -->
-<div class="group relative rounded-DEFAULT overflow-hidden soft-shadow bouncy-hover cursor-pointer bg-surface-container-lowest border-4 border-tertiary-fixed-dim">
-<div class="aspect-video w-full relative">
-<div class="w-full h-full bg-cover bg-center" data-alt="A thumbnail image showing a virtual tour of a modern, brightly colored kindergarten classroom featuring tiny furniture, educational toys, and large windows letting in sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAoYpQfhrWPKFif8uDNbI7x_EEWkvsKEzcxrVz44RwYBxEaMF87LPnU5mgW1M8gyoLhlrLZccXM6pyRb2QntjOjCBX-6NlPNCEod98kaTwPc12XsmKPU4fImQJDPlIy5ZoKI81sCIJyvmRstACVxYXmcr8MBToMVIdW-gVLMsyeQWmopX1JbOP6QSQtL8fkEuCU_UqrHLpKLGZ6QmgspGUwSzaiXragIP0tBXoaRJXHKHMYjSGTqJlrdLTvNstKcnBwRQ2KNZtXkFPw')"></div>
-<!-- Overlay -->
-<div class="absolute inset-0 bg-on-background/30 group-hover:bg-on-background/50 transition-colors flex items-center justify-center backdrop-blur-[1px]">
-<div class="bg-on-primary/90 rounded-full p-3 shadow-lg transform group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-[48px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
-</div>
-</div>
-<div class="p-sm bg-surface-container-lowest">
-<h4 class="font-label-bold text-label-bold text-on-primary-container truncate">Campus Virtual Tour</h4>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main> Footer   <div class="fixed bottom-md right-md z-50 flex flex-col gap-sm items-end group">
-<!-- Floating items (hidden by default, revealed on hover of main FAB area) -->
-<div class="flex-col gap-2 items-end mb-2 hidden group-hover:flex">
-<a class="bg-primary text-on-primary rounded-full p-3 shadow-lg hover:-translate-y-1 transition-transform flex items-center justify-center w-12 h-12" href="#" title="Call">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
-</a>
-<a class="bg-primary text-on-primary rounded-full p-3 shadow-lg hover:-translate-y-1 transition-transform flex items-center justify-center w-12 h-12" href="#" title="WhatsApp">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
-</a>
-<a class="bg-primary text-on-primary rounded-full p-3 shadow-lg hover:-translate-y-1 transition-transform flex items-center justify-center w-12 h-12" href="#" title="Callback">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">phone_callback</span>
-</a>
-</div>
-<!-- Main FAB -->
-<button class="bg-surface-container-highest dark:bg-surface-container-highest text-primary dark:text-primary rounded-full w-16 h-16 shadow-lg border-4 border-secondary flex items-center justify-center hover:scale-105 transition-transform overflow-hidden">
-<img alt="Mascot Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvtHVSktyoqoYDgP-F8HjL6-zxzU00GXXrAOq1Jbb1FLIz3NkWfc9WQgxWKUc6WP6uf6aN0AU3cwLXjCUBfdxIfDu5BEmAv1D9eNy8XoVvQ2StoMCk7X1r_xOG9uhdxWwWg_cLDAemU5PcWoB8CF03yrT0WxMf5qFAI1qR6QTLYZqNJwgE2jkaEdxNkhVchNkCkCflI8A82cIBVIgzC0Fevh0TNUzYspglfygBa3tjd90aZh5U2PdFk0Sbr"/>
-</button>
-</div> Mobile Bottom Navigation (Hidden on Web) <nav class="md:hidden fixed bottom-0 left-0 w-full bg-primary-container z-40 pb-safe pt-2 shadow-[0_-4px_10px_rgba(0,0,0,0.1)] flex justify-around items-center">
-<a class="flex flex-col items-center p-2 text-on-primary opacity-80" href="#">
-<span class="material-symbols-outlined">home</span>
-<span class="text-[10px] font-label-bold mt-1">Home</span>
-</a>
-<a class="flex flex-col items-center p-2 text-on-primary opacity-80" href="#">
-<span class="material-symbols-outlined">school</span>
-<span class="text-[10px] font-label-bold mt-1">Programs</span>
-</a>
-<a class="flex flex-col items-center p-2 text-on-primary border-t-2 border-secondary font-bold" href="#">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">photo_library</span>
-<span class="text-[10px] font-label-bold mt-1 text-secondary-fixed">Media</span>
-</a>
-<a class="flex flex-col items-center p-2 text-on-primary opacity-80" href="#">
-<span class="material-symbols-outlined">contact_support</span>
-<span class="text-[10px] font-label-bold mt-1">Contact</span>
-</a>
-</nav><script>
-        // Simple Vanilla JS for Tab Switching
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabBtns = document.querySelectorAll('.tab-btn');
-            const tabContents = document.querySelectorAll('.tab-content');
+                </div>
+            </div>
+        </div>
+        <!-- Awards Gallery Tab -->
+        <div class="tab-content" id="awards-gallery">
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-md space-y-md">
+                <!-- Award Item -->
+                <div
+                    class="break-inside-avoid bg-surface-container-lowest p-2 rounded-lg border-4 border-secondary-container shadow-md bouncy-hover relative overflow-hidden group">
+                    <div class="aspect-[4/3] rounded-DEFAULT overflow-hidden relative">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="A brightly lit, high-quality photograph of a golden trophy shaped like a star, sitting on a wooden desk in a colorful preschool classroom, shallow depth of field, warm inviting lighting."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmNGaZdvFJh_tVPrJAJrzALiHr_TzEcyCsidt2EPUY3z3FtsWC4Sa0ul-t28oZjBrfay17-YkgQXTfKRIDO1jECfSWCdskpYHD8jH7-P1kSdo7nHUTBoTgXHEWFhG8SpDCr_SgVBydQrj8pDaYSEJCaTtcxrAn5-hs35mSQbT_BAKOgPJXktXkHfFSuK3TKb9NeLogcXITPjICyR0dZCoy73rDsuZl9GZoSY4aKmZHVQ0ngiiH-sOzcsX4vX3FHEge5NXnFNtOG_-d')">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-sm">
+                            <span class="text-on-primary font-label-bold text-label-bold">Excellence in Care 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Award Item -->
+                <div
+                    class="break-inside-avoid bg-surface-container-lowest p-2 rounded-lg border-4 border-tertiary-container shadow-md bouncy-hover relative overflow-hidden group">
+                    <div class="aspect-square rounded-DEFAULT overflow-hidden relative">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="A detailed, premium-looking certificate of achievement in a colourful wooden frame, hanging on a bright blue classroom wall, modern typography, playful borders, photorealistic."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_Ksasa6eZh9HpGwjzFcl2Hj-ffX0KmHjbv-AvD2Y8Y3Yok32TdaYJpX4c-TpNvPjhVGiN_rTdXyfwIzzGDV9ju_B8eJXGUJOVVnrto9alP-D8CLIL-SLHTJzbaOK44eP2g4uogfIvVRqnPDBs9TIKsyiP87-aN-XV79xZzoXFC6eFdXgrS1KcckrGNIvA4sjwXOyVwUYEjqdhifDhl6KIEnGJSyAZwnoiIEnyka_6at8k9H-75aQs7x4qy4KtTHGKEaJz3ZliML7S')">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-sm">
+                            <span class="text-on-primary font-label-bold text-label-bold">Top 10 Preschools - City
+                                Guide</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Award Item -->
+                <div
+                    class="break-inside-avoid bg-surface-container-lowest p-2 rounded-lg border-4 border-primary-container shadow-md bouncy-hover relative overflow-hidden group">
+                    <div class="aspect-[3/4] rounded-DEFAULT overflow-hidden relative">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="A photograph of the school's principal smiling warmly while holding a glass plaque award, surrounded by happy children in a bright, modern, well-lit kindergarten environment."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCBv1Cd45raPxdoQqP-92Yoi1dzlljL8JxsxJ6jEVyV0UKymFWrtVNjNkapp4S1mX-evWtw94LqmCVZK6aZMDOSGQsgvB7CuBenIb8hyjs2MefskcYnX0TJrvXP3IHJgoC3L8zRksImFrnVUgu1fDanbGoPbBGu49axBKsgzDSUB4nD8hMqY5JwT-bFXjYqLHxndAkM5vb7tSse_y3O1VOO6qBdnVIGC-n30lCkWOrF2Brr8FhVBtt0RlaD7nDTBke3Q-QCHBQZR0r')">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-sm">
+                            <span class="text-on-primary font-label-bold text-label-bold">Best Principal Award</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Photo Gallery Tab -->
+        <div class="tab-content" id="photo-gallery">
+            <!-- Filter Bar -->
+            <div class="flex flex-wrap gap-2 justify-center mb-md">
+                <button
+                    class="px-4 py-2 rounded-full font-label-bold text-sm bg-tertiary-fixed text-on-tertiary-fixed border-2 border-tertiary-fixed-dim shadow-sm hover:-translate-y-1 transition-transform">All</button>
+                <button
+                    class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Play
+                    Group</button>
+                <button
+                    class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Nursery</button>
+                <button
+                    class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Junior
+                    KG</button>
+                <button
+                    class="px-4 py-2 rounded-full font-label-bold text-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant transition-colors border-2 border-transparent hover:border-outline-variant">Senior
+                    KG</button>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-sm">
+                <!-- Photo 1 -->
+                <div
+                    class="aspect-square rounded-DEFAULT border-4 border-primary-fixed-dim overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        data-alt="A group of diverse toddlers sitting in a circle on a colorful rug in a bright, modern preschool classroom, engaged in a storytelling session with a smiling teacher, soft natural light."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVHJhPtz2IIkPZhcivy13QRRxtq1O7K4SfxkQcvpduWLriZcmYSY1fcMLpE72bZTd3AhhxOyRf0sRqJ5cbfl6AV6C8Z8lNx1i7xQIfcVJn0CXgOEAPrxeVctq1-P7d163Ey1NzCN31KrHGX6SnhSG40u5dzGJYx1UWxZJUqn1YNwIXJht_zEEygIfcVOsEqn_QCZLWhvpfRyMP5-xz-aKVejl_iWccWoF_EznNzr0coG-TQxeLg7N2D9RsIzdUwtwtd-v7yiaQfQkg')">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
+                    </div>
+                </div>
+                <!-- Photo 2 -->
+                <div
+                    class="aspect-square rounded-DEFAULT border-4 border-secondary-fixed overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        data-alt="A close-up of a child's hands covered in bright non-toxic finger paints, creating abstract art on a large piece of paper in a vibrant, messy-play kindergarten setting, high resolution."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiRT65JAULd2glVHS2c6HRg1x4qzOeQgOCYR9dyCmwXbQSUJOjsmggfi3PPeqcTms4wSim1erwbDzUugVn3hZiKw6ijMIPsVHDGbSrNXbZb7Vno5NbX60KKVJueauSNUCgLE02AMum25yS6yetTvvv4q_M-ynSyiuULdeSaHlIsEVn8CCVEI2JtGHigC-nwE-kdUFu4fgGqzmsFFhIA7e-Eq7-j7f-VK9cFbSmVQVld_Z8xsnRPARh6psugJedNcy7Olt6bE5Zqs2b')">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
+                    </div>
+                </div>
+                <!-- Photo 3 -->
+                <div
+                    class="aspect-square rounded-DEFAULT border-4 border-tertiary-fixed-dim overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        data-alt="Children in tiny chef hats and aprons happily decorating cupcakes in a bright, clean, child-friendly kitchen area, soft pastel colors, joyful and energetic mood."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv3MDHUOYeheWLoEAPMIIdz4emmH2NamKm1CPli2DmwDdVHgm8_BQSgdYI5ls8vBmMHv2Ah7JwRpe1P05F9Tw2xhy7haHlx1bCiU0xPiNPGP0VKkEVqh3SH1xeia3GTD7_yCWpcUChXSNQjVnKMX80sEfbhE5bcz2GsWVRlXF-m7Jd_2-z42v4CrzIbDJ4aQdOhojkCIa3mCK5cyVe9VTLNnCglWu5xYl7qVctWle_tG8Sbc6eJnyV7CO-y7f-GH6cHGhXGknPdSWB')">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-tertiary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
+                    </div>
+                </div>
+                <!-- Photo 4 -->
+                <div
+                    class="aspect-square rounded-DEFAULT border-4 border-primary-fixed overflow-hidden soft-shadow bouncy-hover cursor-pointer group relative">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        data-alt="A wide shot of a colourful outdoor playground filled with active kindergarten children climbing on safe, modern equipment under a clear blue sky, vibrant and dynamic."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAk5d6h670FzK8G_xO_tUW-p47VESgaTrIJ5js7iQNMd7KWvKmd4RK6MVvaOKg_ro_KZHcB7J9oAcUDociKV9kkJbSPXMUJ5U2-w-33JVuDqlsVlTy0dN9eSgw6SBl2MKVh7Y46mz8Ouy-F8MR7DP3AB9nDWmbIHCNBJ4pBtbdtrqt88LshEBo1aeRt3bSNspx8hW-J8eKnSmNJhKameHKevRQAf8j8w3yoOG1JNc2oDX4pGjnQqF48Jcy50GAfZY52PKwnO-Qy7CjE')">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary text-[32px]">zoom_in</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Gallery Tab -->
+        <div class="tab-content" id="video-gallery">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
+                <!-- Video Thumbnail 1 -->
+                <div
+                    class="group relative rounded-DEFAULT overflow-hidden soft-shadow bouncy-hover cursor-pointer bg-surface-container-lowest border-4 border-secondary-fixed">
+                    <div class="aspect-video w-full relative">
+                        <div class="w-full h-full bg-cover bg-center"
+                            data-alt="A thumbnail image of a joyful preschool annual day performance, children in cute colorful animal costumes dancing on a bright stage with professional lighting, wide angle."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDY3uUyTO5Q7n_znIHzHH32Fw8Fxb0YjzNoi4O_rwNcia1OYFzAOu1ZYqnLEYnhnOo_KCM9JwJldEys3wP5cf2Ro6SqjJ1hdL-YTJQXz5V66r9HLMryyKiTY8eT8VKz5n9NtfMRb1zhPoJymg8Up6eZEmdHtmcWvG2UhkqEEa866TdxKvuO4TZJeAodidhqqk4QuexNU7Hq9wqLbcUVTP97aUPTWJU5nX2deI2Hy4loDTu3s9B5Jyq6ckKnL5tx0KApWhzWuC-nFvWB')">
+                        </div>
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-on-background/30 group-hover:bg-on-background/50 transition-colors flex items-center justify-center backdrop-blur-[1px]">
+                            <div
+                                class="bg-on-primary/90 rounded-full p-3 shadow-lg transform group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-primary text-[48px]"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-sm bg-surface-container-lowest">
+                        <h4 class="font-label-bold text-label-bold text-on-primary-container truncate">Annual Day
+                            Highlights 2023</h4>
+                    </div>
+                </div>
+                <!-- Video Thumbnail 2 -->
+                <div
+                    class="group relative rounded-DEFAULT overflow-hidden soft-shadow bouncy-hover cursor-pointer bg-surface-container-lowest border-4 border-tertiary-fixed-dim">
+                    <div class="aspect-video w-full relative">
+                        <div class="w-full h-full bg-cover bg-center"
+                            data-alt="A thumbnail image showing a virtual tour of a modern, brightly colored kindergarten classroom featuring tiny furniture, educational toys, and large windows letting in sunlight."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAoYpQfhrWPKFif8uDNbI7x_EEWkvsKEzcxrVz44RwYBxEaMF87LPnU5mgW1M8gyoLhlrLZccXM6pyRb2QntjOjCBX-6NlPNCEod98kaTwPc12XsmKPU4fImQJDPlIy5ZoKI81sCIJyvmRstACVxYXmcr8MBToMVIdW-gVLMsyeQWmopX1JbOP6QSQtL8fkEuCU_UqrHLpKLGZ6QmgspGUwSzaiXragIP0tBXoaRJXHKHMYjSGTqJlrdLTvNstKcnBwRQ2KNZtXkFPw')">
+                        </div>
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-on-background/30 group-hover:bg-on-background/50 transition-colors flex items-center justify-center backdrop-blur-[1px]">
+                            <div
+                                class="bg-on-primary/90 rounded-full p-3 shadow-lg transform group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-primary text-[48px]"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-sm bg-surface-container-lowest">
+                        <h4 class="font-label-bold text-label-bold text-on-primary-container truncate">Campus Virtual
+                            Tour</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main> Mobile Bottom Navigation (Hidden on Web) <nav
+    class="md:hidden fixed bottom-0 left-0 w-full bg-primary-container z-40 pb-safe pt-2 shadow-[0_-4px_10px_rgba(0,0,0,0.1)] flex justify-around items-center">
+    <a class="flex flex-col items-center p-2 text-on-primary opacity-80" href="#">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px] font-label-bold mt-1">Home</span>
+    </a>
+    <a class="flex flex-col items-center p-2 text-on-primary opacity-80" href="#">
+        <span class="material-symbols-outlined">school</span>
+        <span class="text-[10px] font-label-bold mt-1">Programs</span>
+    </a>
+    <a class="flex flex-col items-center p-2 text-on-primary border-t-2 border-secondary font-bold" href="#">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+        <span class="text-[10px] font-label-bold mt-1 text-secondary-fixed">Media</span>
+    </a>
+    <a class="flex flex-col items-center p-2 text-on-primary opacity-80" href="#">
+        <span class="material-symbols-outlined">contact_support</span>
+        <span class="text-[10px] font-label-bold mt-1">Contact</span>
+    </a>
+</nav>
+<script>
+    // Simple Vanilla JS for Tab Switching
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-            tabBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Remove active states from all buttons and contents
-                    tabBtns.forEach(b => {
-                        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-md', 'transform', 'scale-105');
-                        b.classList.add('text-on-surface-variant');
-                    });
-                    tabContents.forEach(c => c.classList.remove('active'));
-
-                    // Add active state to clicked button
-                    btn.classList.add('bg-primary', 'text-on-primary', 'shadow-md', 'transform', 'scale-105');
-                    btn.classList.remove('text-on-surface-variant');
-
-                    // Show corresponding content
-                    const targetId = btn.getAttribute('data-target');
-                    document.getElementById(targetId).classList.add('active');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active states from all buttons and contents
+                tabBtns.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-on-primary', 'shadow-md', 'transform', 'scale-105');
+                    b.classList.add('text-on-surface-variant');
                 });
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active state to clicked button
+                btn.classList.add('bg-primary', 'text-on-primary', 'shadow-md', 'transform', 'scale-105');
+                btn.classList.remove('text-on-surface-variant');
+
+                // Show corresponding content
+                const targetId = btn.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
             });
         });
-    </script>
+    });
+</script>
 {% endblock %}
