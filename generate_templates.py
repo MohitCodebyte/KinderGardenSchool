@@ -15,6 +15,7 @@ mapping = {
     'careers.html': ('careers.html', 'Careers', 'Careers - Apna Brand Name')
 }
 
+os.makedirs('templates', exist_ok=True)
 for src_name, (target_name, name_key, title_str) in mapping.items():
     src_path = os.path.join('stitch_raw', src_name)
     target_path = os.path.join('templates', target_name)
