@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Franchise - Apna Brand Name</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Nunito+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdada",
+                        "on-surface": "#171c20",
+                        "on-primary-fixed": "#001e2c",
+                        "surface-dim": "#d6dadf",
+                        "surface-container-low": "#f0f4f9",
+                        "secondary-fixed-dim": "#f6bf22",
+                        "surface-container-high": "#e4e9ed",
+                        "on-tertiary-fixed": "#40000d",
+                        "surface-variant": "#dfe3e8",
+                        "inverse-primary": "#7bd0ff",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-background": "#171c20",
+                        "on-secondary-container": "#6f5400",
+                        "tertiary-container": "#ff7380",
+                        "on-secondary-fixed-variant": "#5a4300",
+                        "secondary-fixed": "#ffdf99",
+                        "background": "#f6fafe",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#c4e7ff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#251a00",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#004c69",
+                        "primary-container": "#29abe2",
+                        "surface-container-highest": "#dfe3e8",
+                        "primary": "#00668a",
+                        "surface-bright": "#f6fafe",
+                        "outline-variant": "#bdc8d0",
+                        "secondary": "#775a00",
+                        "inverse-surface": "#2c3135",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eaeef3",
+                        "secondary-container": "#ffc72c",
+                        "on-tertiary-fixed-variant": "#920028",
+                        "on-tertiary-container": "#74001e",
+                        "on-surface-variant": "#3e484f",
+                        "on-error": "#ffffff",
+                        "tertiary": "#be0037",
+                        "outline": "#6e7880",
+                        "surface": "#f6fafe",
+                        "on-primary-container": "#003b53",
+                        "tertiary-fixed-dim": "#ffb3b6",
+                        "surface-tint": "#00668a",
+                        "inverse-on-surface": "#edf1f6",
+                        "primary-fixed-dim": "#7bd0ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "base": "8px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-bold": ["Nunito Sans"],
+                        "body-md": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-bold": ["14px", { "lineHeight": "20px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .wavy-bottom {
+            mask-image: radial-gradient(circle at 50% 100%, transparent 40px, black 41px);
+            mask-size: 100px 100%;
+            mask-repeat: repeat-x;
+            padding-bottom: 60px;
+        }
+        .card-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 30, 44, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-md py-sm bg-primary-container border-t-8 border-tertiary shadow-md">
+<div class="flex items-center gap-sm">
+<img alt="Polar bear mascot logo" class="w-12 h-12 object-contain" data-alt="A stylized polar bear mascot logo, cute and friendly, styled playfully for a premium preschool brand, vector art, bright colors, clean lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqSB7kvetpk6VAz4Pp9n0Gt1gxdfVI87Jj9FIa9i7HOgbGZUSiKFw8aoYCPMndyv7AjiWNr9tt5pyEYlKvJWMj0shqjKZvF_LSrDgGur0sozRWt7SntbgsXVpqtIlNz7rbDS5ss7It4WOYCXc1Yc6co4W87hF_jn2la7R5pisVJ1iprc2lustXzpLs5WPvrrP-NUStBfXdJkUooNDGkL2rURG5fmsVDXyZRBtbMCl_9VRzZEap_Ls9sos8fBSQk7Go6pO5qu647Gb5"/>
+<span class="font-display-lg text-headline-md text-on-primary font-extrabold hidden sm:block">Apna Brand Name</span>
+</div>
+<div class="hidden md:flex items-center gap-md">
+<a class="font-label-bold text-label-bold uppercase tracking-wider text-on-primary opacity-90 hover:text-secondary-fixed-dim transition-colors duration-200" href="#">About Us</a>
+<a class="font-label-bold text-label-bold uppercase tracking-wider text-on-primary opacity-90 hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Programs</a>
+<a class="font-label-bold text-label-bold uppercase tracking-wider text-on-primary opacity-90 hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Admissions</a>
+<a class="font-label-bold text-label-bold uppercase tracking-wider text-on-primary border-b-4 border-secondary pb-1" href="#">Franchise</a>
+<a class="font-label-bold text-label-bold uppercase tracking-wider text-on-primary opacity-90 hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Branches</a>
+<a class="font-label-bold text-label-bold uppercase tracking-wider text-on-primary opacity-90 hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Media</a>
+</div>
+<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold uppercase px-md py-sm rounded-full shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">Enquire Now</button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-primary-container wavy-bottom overflow-hidden">
+<div class="max-w-container-max mx-auto px-md pt-xl pb-xl flex flex-col lg:flex-row items-center gap-lg">
+<div class="flex-1 text-center lg:text-left z-10">
+<h1 class="font-display-lg-mobile md:font-display-lg text-on-primary mb-sm">Start Your Own Preschool</h1>
+<p class="font-body-lg text-on-primary-container mb-lg max-w-2xl mx-auto lg:mx-0">Partner with Apna Brand Name and build a successful, joyful learning environment. Join a trusted network of educators shaping the future.</p>
+<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-lg py-md rounded-full shadow-lg border-b-4 border-secondary hover:-translate-y-1 hover:shadow-xl transition-all inline-flex items-center gap-xs">
+                        Enquire Now
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="flex-1 relative z-10 w-full max-w-md lg:max-w-none">
+<img alt="Business growth illustration" class="w-full h-auto object-contain drop-shadow-xl rounded-full bg-surface-container-low p-sm" data-alt="A playful 3D illustration of a cute polar bear mascot wearing a tiny business tie and holding a briefcase, standing next to upward trending charts made of colorful building blocks. Bright sky blue background, soft premium rendering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgO19twuQrjDYUeKLoDKtRMAdzIiUPGJigxv1TLLoiMqPGfcrlNFtpjOcRwEAkWSQUN8CXE7dVIMz-G7xjM3MfE_qJYL7-2I5T_PqBgLyqI6BJzNAmSSV6MpAJeq9O-EcQzj1JFUbraCdtAl4SWhA3e_WQl_4kKWNInrGZOnQUT1-Lkm4UzhWqbDXSoAxLSmWCwz0YDR4zoHNodRPXrj6vBZB9zbq9hY-Knas8Aw-Mxnciv3qRYRkRW9TZ72hcbKLsxCrphcu2DaLN"/>
+</div>
+</div>
+<!-- Decorative blobs -->
+<div class="absolute top-10 left-10 w-32 h-32 bg-secondary-fixed rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-pulse"></div>
+<div class="absolute bottom-10 right-10 w-48 h-48 bg-tertiary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+</section>
+<!-- Why Partner Section -->
+<section class="max-w-container-max mx-auto px-md py-xl">
+<div class="text-center mb-lg">
+<h2 class="font-headline-md text-primary mb-xs">Why Partner With Us</h2>
+<p class="text-on-surface-variant font-body-md max-w-xl mx-auto">We provide everything you need to run a successful, vibrant preschool that parents trust.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Investment -->
+<div class="bg-surface-container-lowest p-md rounded-xl border-2 border-tertiary-container shadow-sm card-lift flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-tertiary-container rounded-full flex items-center justify-center mb-sm shadow-inner">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container">payments</span>
+</div>
+<h3 class="font-label-bold text-lg mb-xs text-on-surface">Proven Investment</h3>
+<p class="text-on-surface-variant text-sm">High ROI with a clear, transparent financial model designed for long-term growth.</p>
+</div>
+<!-- Space -->
+<div class="bg-surface-container-lowest p-md rounded-xl border-2 border-secondary-container shadow-sm card-lift flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-sm shadow-inner">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container">architecture</span>
+</div>
+<h3 class="font-label-bold text-lg mb-xs text-on-surface">Space Design</h3>
+<p class="text-on-surface-variant text-sm">Expert guidance on transforming your space into a magical learning environment.</p>
+</div>
+<!-- Training -->
+<div class="bg-surface-container-lowest p-md rounded-xl border-2 border-[#7AC142] shadow-sm card-lift flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-[#e5f5db] rounded-full flex items-center justify-center mb-sm shadow-inner">
+<span class="material-symbols-outlined text-4xl text-[#3d6b1d]">school</span>
+</div>
+<h3 class="font-label-bold text-lg mb-xs text-on-surface">Full Training</h3>
+<p class="text-on-surface-variant text-sm">Comprehensive training for you and your staff on our unique curriculum.</p>
+</div>
+<!-- Support -->
+<div class="bg-surface-container-lowest p-md rounded-xl border-2 border-primary-container shadow-sm card-lift flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mb-sm shadow-inner">
+<span class="material-symbols-outlined text-4xl text-on-primary-container">support_agent</span>
+</div>
+<h3 class="font-label-bold text-lg mb-xs text-on-surface">Ongoing Support</h3>
+<p class="text-on-surface-variant text-sm">Dedicated operational, marketing, and academic support every step of the way.</p>
+</div>
+</div>
+</section>
+<!-- Requirements Section -->
+<section class="bg-surface-container-low py-xl">
+<div class="max-w-container-max mx-auto px-md">
+<div class="text-center mb-lg">
+<h2 class="font-headline-md text-primary mb-xs">What It Takes</h2>
+<p class="text-on-surface-variant font-body-md max-w-xl mx-auto">The foundational requirements to start your journey with us.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Space -->
+<div class="bg-primary-fixed p-lg rounded-full flex items-center gap-md shadow-sm hover:shadow-md transition-shadow border border-primary-fixed-dim">
+<div class="bg-surface-container-lowest p-sm rounded-full text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-3xl">square_foot</span>
+</div>
+<div>
+<h4 class="font-label-bold text-on-primary-fixed-variant text-lg">Space Requirement</h4>
+<p class="text-on-primary-fixed">Minimum 2000-2500 sq. ft. of safe, open area.</p>
+</div>
+</div>
+<!-- Location -->
+<div class="bg-secondary-fixed p-lg rounded-full flex items-center gap-md shadow-sm hover:shadow-md transition-shadow border border-secondary-fixed-dim">
+<div class="bg-surface-container-lowest p-sm rounded-full text-secondary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<div>
+<h4 class="font-label-bold text-on-secondary-fixed-variant text-lg">Location</h4>
+<p class="text-on-secondary-fixed">Prime residential area with easy accessibility.</p>
+</div>
+</div>
+<!-- Investment -->
+<div class="bg-tertiary-fixed p-lg rounded-full flex items-center gap-md shadow-sm hover:shadow-md transition-shadow border border-tertiary-fixed-dim">
+<div class="bg-surface-container-lowest p-sm rounded-full text-tertiary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-3xl">account_balance_wallet</span>
+</div>
+<div>
+<h4 class="font-label-bold text-on-tertiary-fixed-variant text-lg">Investment</h4>
+<p class="text-on-tertiary-fixed">Competitive startup cost tailored to your region.</p>
+</div>
+</div>
+<!-- Passion -->
+<div class="bg-[#e5f5db] p-lg rounded-full flex items-center gap-md shadow-sm hover:shadow-md transition-shadow border border-[#7AC142]">
+<div class="bg-surface-container-lowest p-sm rounded-full text-[#3d6b1d] shadow-sm shrink-0">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<div>
+<h4 class="font-label-bold text-[#3d6b1d] text-lg">Passion</h4>
+<p class="text-[#2b4c14]">A deep love for early childhood education.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Form Section -->
+<section class="max-w-container-max mx-auto px-md py-xl mb-xl">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl border-4 border-surface-container-highest overflow-hidden">
+<div class="flex flex-col md:flex-row">
+<!-- Left side -->
+<div class="md:w-2/5 bg-primary p-lg text-on-primary flex flex-col justify-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-display-lg-mobile md:font-headline-md mb-sm">Join Our Family</h2>
+<p class="font-body-md opacity-90 mb-md">Take the first step towards building a rewarding educational business. Fill out the form, and our franchise team will reach out to discuss the possibilities.</p>
+<ul class="space-y-sm">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-secondary-container">check_circle</span> Quick Response Time</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-secondary-container">check_circle</span> Confidential Discussion</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-secondary-container">check_circle</span> Expert Guidance</li>
+</ul>
+</div>
+<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary-container rounded-full opacity-20"></div>
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary-container rounded-full opacity-20"></div>
+</div>
+<!-- Right side Form -->
+<div class="md:w-3/5 p-lg">
+<form class="space-y-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div>
+<label class="block font-label-bold text-on-surface-variant mb-xs">Full Name</label>
+<input class="w-full rounded-full border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-low px-sm py-sm outline-none transition-colors" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface-variant mb-xs">Phone Number</label>
+<input class="w-full rounded-full border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-low px-sm py-sm outline-none transition-colors" placeholder="+91 98765 43210" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface-variant mb-xs">Email Address</label>
+<input class="w-full rounded-full border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-low px-sm py-sm outline-none transition-colors" placeholder="jane@example.com" type="email"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div>
+<label class="block font-label-bold text-on-surface-variant mb-xs">Property Type</label>
+<select class="w-full rounded-full border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-low px-sm py-sm outline-none transition-colors appearance-none">
+<option>Select Type</option>
+<option>Leased Space</option>
+<option>Owned Property</option>
+</select>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface-variant mb-xs">Timeline</label>
+<select class="w-full rounded-full border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-low px-sm py-sm outline-none transition-colors appearance-none">
+<option>Select Timeline</option>
+<option>Immediate</option>
+<option>Within 3 Months</option>
+<option>Within 6 Months</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface-variant mb-xs">Investment Budget</label>
+<select class="w-full rounded-full border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-low px-sm py-sm outline-none transition-colors appearance-none">
+<option>Select Budget</option>
+<option>10-20 Lakhs</option>
+<option>20-30 Lakhs</option>
+<option>30+ Lakhs</option>
+</select>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-bold text-lg py-md rounded-full border-b-4 border-secondary hover:-translate-y-1 shadow-md hover:shadow-lg transition-all mt-sm" type="button">
+                                Submit Enquiry
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface w-full py-xl px-lg grid grid-cols-1 md:grid-cols-4 gap-md max-w-container-max mx-auto full-width rounded-t-lg shadow-xl mt-auto">
+<div class="col-span-1 md:col-span-1">
+<h2 class="font-display-lg text-headline-md text-secondary mb-sm">Apna Brand Name</h2>
+<p class="font-body-md text-inverse-on-surface text-body-md mb-md">Nurturing young minds through playful learning and dedicated care.</p>
+<p class="font-body-md text-surface-variant text-sm">© 2024 Apna Brand Name. All rights reserved.</p>
+</div>
+<div class="col-span-1">
+<h3 class="font-label-bold text-inverse-on-surface mb-sm">Explore</h3>
+<ul class="space-y-sm flex flex-col">
+<a class="font-body-md text-surface-variant hover:text-secondary-container transition-all" href="#">Programs</a>
+<a class="font-body-md text-surface-variant hover:text-secondary-container transition-all" href="#">Admissions</a>
+<a class="font-body-md text-secondary font-bold hover:text-secondary-container transition-all" href="#">Franchise</a>
+<a class="font-body-md text-surface-variant hover:text-secondary-container transition-all" href="#">Contact Us</a>
+</ul>
+</div>
+<div class="col-span-1">
+<h3 class="font-label-bold text-inverse-on-surface mb-sm">Legal</h3>
+<ul class="space-y-sm flex flex-col">
+<a class="font-body-md text-surface-variant hover:text-secondary-container transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-surface-variant hover:text-secondary-container transition-all" href="#">Terms of Service</a>
+</ul>
+</div>
+<div class="col-span-1">
+<h3 class="font-label-bold text-inverse-on-surface mb-sm">Connect</h3>
+<div class="flex gap-sm">
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-inverse-surface hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-inverse-surface hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

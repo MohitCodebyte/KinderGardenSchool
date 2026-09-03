@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Find a Branch - Apna Brand Name</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Baloo 2 and Poppins -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&amp;family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdf99",
+                    "on-tertiary-container": "#74001e",
+                    "primary-fixed": "#c4e7ff",
+                    "surface-dim": "#d6dadf",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e4e9ed",
+                    "on-background": "#171c20",
+                    "surface-container-low": "#f0f4f9",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eaeef3",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bdc8d0",
+                    "on-primary-fixed-variant": "#004c69",
+                    "tertiary-container": "#ff7380",
+                    "primary-fixed-dim": "#7bd0ff",
+                    "on-secondary-fixed-variant": "#5a4300",
+                    "on-tertiary-fixed-variant": "#920028",
+                    "surface-bright": "#f6fafe",
+                    "secondary": "#775a00",
+                    "on-surface": "#171c20",
+                    "on-secondary-fixed": "#251a00",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffdada",
+                    "outline": "#6e7880",
+                    "on-tertiary-fixed": "#40000d",
+                    "on-surface-variant": "#3e484f",
+                    "on-primary-container": "#003b53",
+                    "inverse-surface": "#2c3135",
+                    "surface-container-highest": "#dfe3e8",
+                    "surface-tint": "#00668a",
+                    "on-primary-fixed": "#001e2c",
+                    "tertiary": "#be0037",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#f6bf22",
+                    "inverse-on-surface": "#edf1f6",
+                    "tertiary-fixed-dim": "#ffb3b6",
+                    "surface-variant": "#dfe3e8",
+                    "background": "#f6fafe",
+                    "inverse-primary": "#7bd0ff",
+                    "surface": "#f6fafe",
+                    "primary": "#00668a",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#ffc72c",
+                    "primary-container": "#29abe2",
+                    "on-secondary-container": "#6f5400"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "sm": "12px",
+                    "container-max": "1200px",
+                    "xl": "80px",
+                    "lg": "48px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": [
+                            "Baloo 2", "cursive"
+                    ],
+                    "display-lg-mobile": [
+                            "Baloo 2", "cursive"
+                    ],
+                    "body-lg": [
+                            "Poppins", "sans-serif"
+                    ],
+                    "label-bold": [
+                            "Poppins", "sans-serif"
+                    ],
+                    "display-lg": [
+                            "Baloo 2", "cursive"
+                    ],
+                    "body-md": [
+                            "Poppins", "sans-serif"
+                    ]
+            },
+            "fontSize": {
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-bold": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+        }
+        /* Soft shadows for depth */
+        .soft-shadow {
+            box-shadow: 0 10px 30px rgba(30, 42, 56, 0.08);
+        }
+        .soft-shadow-hover:hover {
+            box-shadow: 0 15px 40px rgba(30, 42, 56, 0.12);
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+        /* Wavy bottom edge for hero */
+        .wavy-bottom {
+            mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg"><path d="M0 0l0 60c91.6 30 200 48 360 48s268.4-18 360-48 200-48 360-48 268.4 18 360 48l0-60z" fill="white"/></svg>');
+            mask-size: cover;
+            mask-position: bottom;
+            mask-repeat: no-repeat;
+            padding-bottom: 80px; /* Space for the wave */
+        }
+        /* Custom Button Style */
+        .btn-chunky {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-bottom-width: 4px;
+            transition: transform 0.1s, border-bottom-width 0.1s;
+        }
+        .btn-chunky:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px;
+        }
+        /* Custom Input Pill */
+        .input-pill {
+            border: 2px solid theme('colors.primary-fixed-dim');
+        }
+        .input-pill:focus {
+            border-color: theme('colors.tertiary-container');
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(255, 115, 128, 0.2);
+        }
+    </style>
+</head>
+<body class="font-body-lg text-on-surface antialiased overflow-x-hidden">
+<!-- TopNavBar Component -->
+<nav class="bg-surface dark:bg-surface-container sticky top-0 w-full z-50 border-b-4 border-primary-container shadow-md">
+<div class="flex justify-between items-center px-md py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">
+                    pets
+                </span>
+<span class="font-display-lg text-headline-md text-primary dark:text-inverse-primary">Apna Brand Name</span>
+</div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-6 items-center">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-bold text-label-bold hover:bg-primary-fixed-dim hover:text-on-primary-fixed px-3 py-2 rounded-full hover:-translate-y-1 transition-transform duration-200" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-bold text-label-bold hover:bg-primary-fixed-dim hover:text-on-primary-fixed px-3 py-2 rounded-full hover:-translate-y-1 transition-transform duration-200" href="#">Programs</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-bold text-label-bold hover:bg-primary-fixed-dim hover:text-on-primary-fixed px-3 py-2 rounded-full hover:-translate-y-1 transition-transform duration-200" href="#">Admissions</a></li>
+<!-- Franchise is pseudo-active as we are on Branches, assuming connection -->
+<li><a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-bold text-label-bold" href="#">Franchise</a></li>
+</ul>
+<div class="hidden md:block">
+<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold rounded-full px-6 btn-chunky border-secondary-fixed-dim hover:bg-secondary-fixed-dim">
+                    Join Now
+                </button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="bg-primary-fixed relative wavy-bottom">
+<div class="max-w-container-max mx-auto px-gutter pt-xl pb-lg flex flex-col md:flex-row items-center gap-gutter">
+<div class="md:w-1/2 space-y-6 z-10 text-center md:text-left">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary-fixed leading-tight">
+                        Find a Branch Near You
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-primary-fixed-variant">
+                        Discover the closest Apna Brand Name center to start your child's journey of learning and fun!
+                    </p>
+</div>
+<div class="md:w-1/2 relative flex justify-center mt-8 md:mt-0">
+<div class="relative w-64 h-64 md:w-80 md:h-80 bg-surface rounded-full flex items-center justify-center soft-shadow border-4 border-surface">
+<!-- Playful map illustration behind the mascot (placeholder concept) -->
+<div class="absolute inset-0 bg-primary-fixed-dim opacity-30 rounded-full blur-xl"></div>
+<img class="w-full h-full object-contain relative z-10 drop-shadow-lg" data-alt="Cute polar bear mascot logo for Apna Brand Name preschool. The bear is smiling and waving enthusiastically. It is wearing a Grass Green scarf. The illustration is done in a playful, child-friendly vector style with bright colors and soft shapes, typical of high-quality educational branding." src="https://lh3.googleusercontent.com/aida/AP1WRLvtHVSktyoqoYDgP-F8HjL6-zxzU00GXXrAOq1Jbb1FLIz3NkWfc9WQgxWKUc6WP6uf6aN0AU3cwLXjCUBfdxIfDu5BEmAv1D9eNy8XoVvQ2StoMCk7X1r_xOG9uhdxWwWg_cLDAemU5PcWoB8CF03yrT0WxMf5qFAI1qR6QTLYZqNJwgE2jkaEdxNkhVchNkCkCflI8A82cIBVIgzC0Fevh0TNUzYspglfygBa3tjd90aZh5U2PdFk0Sbr"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Bar Section -->
+<section class="max-w-container-max mx-auto px-gutter -mt-16 relative z-20 mb-xl">
+<div class="bg-surface-container-low rounded-xl p-md soft-shadow border-2 border-outline-variant flex flex-col md:flex-row gap-4 items-end">
+<div class="w-full md:w-1/4 flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface pl-2">Select State</label>
+<div class="relative">
+<select class="w-full bg-surface rounded-full px-4 py-3 input-pill font-body-md text-body-md text-on-surface appearance-none cursor-pointer">
+<option>All States</option>
+<option>Maharashtra</option>
+<option>Karnataka</option>
+<option>Delhi</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="w-full md:w-1/4 flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface pl-2">Select City</label>
+<div class="relative">
+<select class="w-full bg-surface rounded-full px-4 py-3 input-pill font-body-md text-body-md text-on-surface appearance-none cursor-pointer">
+<option>All Cities</option>
+<option>Mumbai</option>
+<option>Bangalore</option>
+<option>New Delhi</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="w-full md:w-1/4 flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface pl-2">Select Center</label>
+<div class="relative">
+<select class="w-full bg-surface rounded-full px-4 py-3 input-pill font-body-md text-body-md text-on-surface appearance-none cursor-pointer">
+<option>All Centers</option>
+<option>Andheri West</option>
+<option>Whitefield</option>
+<option>Vasant Vihar</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="w-full md:w-1/4">
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-bold text-label-bold rounded-full px-6 py-3 btn-chunky border-secondary-fixed-dim hover:bg-secondary-fixed-dim flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">search</span>
+                        Find
+                    </button>
+</div>
+</div>
+</section>
+<!-- Interactive Map Placeholder -->
+<section class="max-w-container-max mx-auto px-gutter mb-xl">
+<div class="bg-surface-container-high rounded-xl h-[400px] w-full flex items-center justify-center relative overflow-hidden soft-shadow border-2 border-outline-variant group">
+<!-- Using a placeholder background for the map illustration -->
+<div class="absolute inset-0 bg-cover bg-center opacity-40 transition-transform duration-700 group-hover:scale-105" data-alt="A stylized, playful vector map of India designed for a children's website. The map is softly colored in pale blues and greens with gentle rolling shapes indicating terrain. Brightly colored, oversized pin markers (red, yellow, green, blue) pop against the soft background, indicating branch locations. The style is modern, approachable, and uses soft-UI elements with subtle rounded shadows." data-location="India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6ouVWk1InPIhbBUKcRzu6PYT_J5SRz0Sc70yOo4NgtNTbZuHQ5s81NkPpcfrzZNza7hhn5KVzftM770u5x6S_rBwjzxGxFQQXf6xq279Toq5Dpddjo7dWIyqPTlkU5_4_sfw_KsQbN3zI0IUiG9JoSggaWzfJNhsDk7SHdeW7V6bohl3w75y7qTxeH-rWrttlWLszVDYJ1Rmo3DKPWMnPEeH9uOldTD-LupXe3978cEiZVO7kn95P48rYA4G0NQlaARdm1yoxkVq3')"></div>
+<div class="relative z-10 text-center bg-surface/80 backdrop-blur-sm p-6 rounded-lg">
+<span class="material-symbols-outlined text-4xl text-tertiary-container mb-2" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Explore Our Locations</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Interactive Map coming soon</p>
+</div>
+</div>
+</section>
+<!-- Branch Grid Section -->
+<section class="max-w-container-max mx-auto px-gutter mb-xl">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8 text-center md:text-left">Our Branches</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-tertiary-fixed rounded-xl p-md soft-shadow soft-shadow-hover flex flex-col border-2 border-tertiary-container">
+<div class="w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A bright, cheerful classroom in a kindergarten branch located in Whitefield. The room features small, colorful tables and chairs, natural light streaming through large windows, and shelves filled with educational toys. The walls have playful, subtle pastel shapes painted on them. The atmosphere is safe, inviting, and vibrant, embodying modern early childhood education." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6rQaov7NTYrm2h0l7m-2xI_YkW9xfmK4XTv-B_vLOyqbtOo5bv7eFAgZipNlepuoOitBDMp5rGdrCmtYZuD4liGmRteOq0z3xMiZblgmTz6x1br0bZkHXkRbQcUokcArGA_6RxO4ea3tyg8z1gQxIgx6rot2rY2HV8QAyFWcIucg9BGgbgMA9NuslCOtm_RcxzvsA4eBcfSWE9zEtClbs-KNQIL7aPfrfxlEKbzOH3PpNvMCHN6KnU_hIBbtcxYfYKppyEaOZTvtE"/>
+<span class="absolute top-2 right-2 bg-surface text-on-surface font-label-bold text-[12px] px-3 py-1 rounded-full shadow-sm">Whitefield</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-bold text-on-tertiary-fixed mb-2">Whitefield Branch</h3>
+<p class="font-body-md text-body-md text-on-tertiary-fixed-variant mb-4 flex-grow flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary-container mt-1 shrink-0 text-sm" style="font-variation-settings: 'FILL' 1;">home_pin</span>
+                        123 Learning Lane, Near IT Park, Whitefield, Bangalore, Karnataka 560066
+                    </p>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-body-md text-body-md text-on-tertiary-fixed font-medium">+91 98765 43210</span>
+</div>
+<button class="mt-auto w-full bg-surface text-tertiary-container font-label-bold text-label-bold rounded-full py-3 border-2 border-tertiary-container hover:bg-tertiary-container hover:text-on-tertiary transition-colors flex justify-center items-center gap-2">
+                        Get Directions
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-secondary-fixed rounded-xl p-md soft-shadow soft-shadow-hover flex flex-col border-2 border-secondary-container">
+<div class="w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="An outdoor play area at a kindergarten branch in Andheri West. The area features a soft, vibrant yellow and green rubberized floor, a small modern play structure with a slide, and a sandpit. Children's artwork is displayed on a nearby fence. The setting is sunny, safe, and encourages physical activity and joy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbuhyHJE-Sl9aJIJzeEwJAa0c8RU5jE7VUZUKOvJ8wKmnLOoAzUolYAuI-SIo8oMPRSj40fObKY7DLgBRP9EG3FgxBAr43t-1W7jkMpMAkPfrZpmPpvD_fLlartTCxJ81qp-_ajr9p6ubsN3U7owlRo19Gfcku0YK3xuBPKOBiFNle6KzSeEFAmBpUrE-MOYsTMrvo5goOWbYN4eoR02rxw1CgJDTeLP_8QRjC3iL9ZjfpWZi_n7gNDBOIY5dNnYEGXUdDg5DOLdme"/>
+<span class="absolute top-2 right-2 bg-surface text-on-surface font-label-bold text-[12px] px-3 py-1 rounded-full shadow-sm">Andheri West</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-bold text-on-secondary-fixed mb-2">Andheri Branch</h3>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant mb-4 flex-grow flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary-container mt-1 shrink-0 text-sm" style="font-variation-settings: 'FILL' 1;">home_pin</span>
+                        45 Playful Street, Andheri West, Mumbai, Maharashtra 400053
+                    </p>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-body-md text-body-md text-on-secondary-fixed font-medium">+91 98765 43211</span>
+</div>
+<button class="mt-auto w-full bg-surface text-secondary font-label-bold text-label-bold rounded-full py-3 border-2 border-secondary-container hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex justify-center items-center gap-2">
+                        Get Directions
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="bg-primary-fixed rounded-xl p-md soft-shadow soft-shadow-hover flex flex-col border-2 border-primary-container">
+<div class="w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A cozy reading corner in a kindergarten branch in Vasant Vihar. Soft, plush blue seating arrangements are surrounded by low, accessible bookshelves filled with colorful children's books. A large, fluffy rug is on the floor. The lighting is warm and calm, creating a serene environment perfect for storytelling and quiet time." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7O_bYEpsd8gTmQ5VR_aAvHUHYX4MFrBh-I-i9IeeZqmfvz5IV_OqQqziTOxN9LkZ7212mHVkfF_ggVnz4jyciTqAaZXTckhlfglrReVW0qkDKg_p0uy_ZEJdory_d3HV9UeblFES0TL5b2_uNw8VdLxuqVv6O-0zfKhs9Si3oawMkoZHGyAzHP8xawJGTixrlfLoHULFCMYlQDIt5RehXNbqEPkV-tACUxzpkkRxo6t-TQQukkyajF5hwQ2Abuf5HJ2Od_mN9hiES"/>
+<span class="absolute top-2 right-2 bg-surface text-on-surface font-label-bold text-[12px] px-3 py-1 rounded-full shadow-sm">Vasant Vihar</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-bold text-on-primary-fixed mb-2">Vasant Vihar Center</h3>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant mb-4 flex-grow flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container mt-1 shrink-0 text-sm" style="font-variation-settings: 'FILL' 1;">home_pin</span>
+                        78 Storybook Ave, Vasant Vihar, New Delhi, Delhi 110057
+                    </p>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-body-md text-body-md text-on-primary-fixed font-medium">+91 98765 43212</span>
+</div>
+<button class="mt-auto w-full bg-surface text-primary font-label-bold text-label-bold rounded-full py-3 border-2 border-primary-container hover:bg-primary-container hover:text-on-primary transition-colors flex justify-center items-center gap-2">
+                        Get Directions
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4 (Repeating style 1 for grid completion) -->
+<div class="bg-tertiary-fixed rounded-xl p-md soft-shadow soft-shadow-hover flex flex-col border-2 border-tertiary-container">
+<div class="w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="An art room setup in a kindergarten branch in Koramangala. Small easels are arranged in a circle, with non-toxic paints and large brushes ready for use. The floor has a splattered paint design (intentional). The room is flooded with natural light, showcasing a vibrant, creative, and messy-play friendly environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTeYCwkv_dAuAYktiDTNlaxBuYLC_q0EALgmvCS5nwQFVIBp0sQ7QE5P3_fhDJI4jhN_pG9AdNI76xO7HRMfeae4vOx63ZoxCUeqU-CISK5tIUp51lbECTWQ87BAgZwyYU4-Um8Ro73DzwLI0ixNB8ZpgwIkrphRfDfwQg9OYpPs06IqzeBCewW_w2Ncrne0Y7XPYaFzVTKzq-YONgGXd_xp-FSwLVB5976dgiZjzTskN9hFfkYfrEZ9gmBWNbUIXmPXWlbehPg2og"/>
+<span class="absolute top-2 right-2 bg-surface text-on-surface font-label-bold text-[12px] px-3 py-1 rounded-full shadow-sm">Koramangala</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-bold text-on-tertiary-fixed mb-2">Koramangala Branch</h3>
+<p class="font-body-md text-body-md text-on-tertiary-fixed-variant mb-4 flex-grow flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary-container mt-1 shrink-0 text-sm" style="font-variation-settings: 'FILL' 1;">home_pin</span>
+                        12 Art Street, Block 4, Koramangala, Bangalore, Karnataka 560034
+                    </p>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-body-md text-body-md text-on-tertiary-fixed font-medium">+91 98765 43213</span>
+</div>
+<button class="mt-auto w-full bg-surface text-tertiary-container font-label-bold text-label-bold rounded-full py-3 border-2 border-tertiary-container hover:bg-tertiary-container hover:text-on-tertiary transition-colors flex justify-center items-center gap-2">
+                        Get Directions
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface w-full rounded-t-lg">
+<div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-md py-lg max-w-container-max mx-auto">
+<div class="flex items-center gap-2 mb-4 md:mb-0">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">pets</span>
+<span class="font-display-lg text-headline-md text-primary">Apna Brand Name</span>
+</div>
+<ul class="flex flex-wrap justify-center gap-6">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Contact Support</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Careers</a></li>
+</ul>
+<div class="mt-4 md:mt-0 text-on-surface font-body-md text-body-md">
+                © 2024 Apna Brand Name Kindergarten. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
